@@ -371,6 +371,9 @@ position: absolute;
 bottom: 40px;
   
   }
+ .footer-top .footer-brand img {
+    width: 250px;
+  }
 
   .dark-mode .header-top .container .logo-lm img {
     content: url('/assets/images/logoLM.png');
