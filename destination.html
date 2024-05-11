@@ -22,6 +22,11 @@ session_start();
 </head>
 
 <body id="top">
+  <style>
+    .navbar-list a{
+      color: black;
+    }
+  </style>
 
 
 <header class="header" data-header>
@@ -330,7 +335,10 @@ function filterDestinations(category) {
   var boxes = document.querySelectorAll('.box');
   boxes.forEach(function(box) {
     var isPopular = box.querySelector('.label') && box.querySelector('.label').innerText === 'Popular';
-    if (category === 'all' || (category === 'popular' && isPopular) || (category === 'featured' && !isPopular) || (category === 'new' && !isPopular)) {
+    var isNew = box.querySelector('.label') && box.querySelector('.label').innerText === 'New';
+    var isFeatured = box.querySelector('.label') && box.querySelector('.label').innerText === 'Featured';
+    var isNull = box.querySelector('.label') && box.querySelector('.label').innerText === '';
+    if (category === 'all' || (category === 'popular' && isPopular) || (category === 'featured' && isFeatured) || (category === 'new' && isNew)) {
       box.style.display = 'block';
     } else {
       box.style.display = 'none';

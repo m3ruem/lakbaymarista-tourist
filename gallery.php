@@ -8,13 +8,14 @@ session_start();
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakbay Marista | Gallery </title>
+  <title>Lakbay Marista</title>
 
   <link rel="shortcut icon" href="./assets/images/logoLM-dark.png" type="image/svg+xml">
 
-  <link rel="stylesheet" href="./assets/css/gallery.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link type="text/css" rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -34,9 +35,9 @@ session_start();
         </div>
         <ul class="social-list">
           <li>
-          <a href="#" class="logo-lm">
-  <img src="./assets/images/logoLM.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM.png">
-</a>
+            <a href="#" class="logo-lm">
+              <img src="./assets/images/logoLM.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM.png">
+            </a>
 
           </li>
         </ul>
@@ -56,37 +57,37 @@ session_start();
           </div>
 
           <ul class="navbar-list">
-                    <li>
-                        <a href="#home" class="navbar-link" data-nav-link>home</a>
-                    </li>
-                    <li>
-                        <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
-                    </li>
-                    <li>
-                        <a href="/destination.html" class="navbar-link" data-nav-link>destinations</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-                    </li>
-                    <li>
-                        <?php if (isset($_SESSION['loggedin'])) : ?>
-                            <div class="dropdown">
-                                <a href="#" class="navbar-link dropdown-toggle">
-                                    <ion-icon name="person-circle-outline"></ion-icon>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="profile.php" class="dropdown-item">Profile</a>
-                                    <a href="activity.php" class="dropdown-item">Activity</a>
-                                    <a href="membership.php" class="dropdown-item">Membership</a>
-                                    <a href="logout.php" class="dropdown-item">Logout</a>
-                                </div>
-                            </div>
-                        <?php else : ?>
-                          <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
-                          
-                        <?php endif; ?>
-                    </li>
-                </ul>
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+            <li>
+              <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+            <li>
+              <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
+            </li>
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+            <li>
+              <?php if (isset($_SESSION['loggedin'])) : ?>
+                <div class="dropdown">
+                  <a href="#" class="navbar-link dropdown-toggle">
+                    <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="profile.php" class="dropdown-item">Profile</a>
+                    <a href="activity.php" class="dropdown-item">Activity</a>
+                    <a href="membership.php" class="dropdown-item">Membership</a>
+                    <a href="logout.php" class="dropdown-item">Logout</a>
+                  </div>
+                </div>
+              <?php else : ?>
+                <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
+
+              <?php endif; ?>
+            </li>
+          </ul>
 
         </nav>
 
@@ -109,7 +110,6 @@ session_start();
     </div>
 
   </header>
-
 
 
 

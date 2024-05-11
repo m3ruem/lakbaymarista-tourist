@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body style="background-color: black;">
-<?php
+    <?php
     if (isset($_GET['error']) && $_GET['error'] == 'invalid_credentials') {
         echo '<p style="color:red;">Invalid email or password. Please try again.</p>';
     }
@@ -212,8 +212,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     url: "register.php",
                     method: "POST",
                     data: {
-                        name: name,
+                        firstname: firstname,
+                        lastname: lastname,
                         password: password,
+                        mobile: mobile,
                         confirm_password: confirm_password,
                         email: email,
                     },

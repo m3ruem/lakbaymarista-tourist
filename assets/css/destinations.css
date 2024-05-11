@@ -391,7 +391,36 @@
 
 
 
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .filter-buttons button:hover {
+    transform: translateY(-3px);
+  }
+  
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 
+  .buttons {
+    position: absolute;
+    text-align: center;
+    top: 150px;
+  }
+  
+  
+  
+  
 
 
 

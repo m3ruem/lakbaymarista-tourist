@@ -71,13 +71,41 @@ function toggleMode() {
   if (modeSwitch.checked) {
     body.classList.add('dark-mode');
     logoImage.src = darkLogo;
+    localStorage.setItem('darkMode', 'true'); 
   } else {
     body.classList.remove('dark-mode');
-    logoImage.src = originalLogo; 
+    logoImage.src = originalLogo;
+    localStorage.setItem('darkMode', 'false');
   }
 }
 
 
+function initializeToggle() {
+  const darkMode = localStorage.getItem('darkMode');
+  const modeSwitch = document.getElementById('mode-switch');
+  if (darkMode === 'true') {
+    modeSwitch.checked = true;
+    toggleMode();
+  } else {
+    modeSwitch.checked = false;
+  }
+}
 
 
+window.onload = function() {
+  initializeToggle();
+};
+
+function toggleDropdown() {
+  const dropdownMenu = document.getElementById('dropdownMenu');
+  dropdownMenu.classList.toggle('show');
+}
+
+$(document).ready(function() {
+  $('.navbar-link.dropdown-toggle').click(function(event) {
+      event.preventDefault();
+      console.log("Dropdown should toggle.");
+      $(this).next('.dropdown-menu').toggle(); 
+  });
+});
 
