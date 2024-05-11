@@ -16,8 +16,7 @@ LakbayMarista Tourist is a web application designed to help tourists explore and
 ## Technologies Used
 
 - Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express.js
-- Database: MongoDB
+- Backend: PHP
 - Map Integration: Google Maps API
 
 ## Getting Started
