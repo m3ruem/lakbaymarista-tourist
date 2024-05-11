@@ -34,9 +34,9 @@ session_start();
         </div>
         <ul class="social-list">
           <li>
-          <a href="#" class="logo-lm">
-  <img src="./assets/images/logoLM.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM.png">
-</a>
+            <a href="#" class="logo-lm">
+              <img src="./assets/images/logoLM.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM.png">
+            </a>
 
           </li>
         </ul>
@@ -56,37 +56,37 @@ session_start();
           </div>
 
           <ul class="navbar-list">
-                    <li>
-                        <a href="#home" class="navbar-link" data-nav-link>home</a>
-                    </li>
-                    <li>
-                        <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
-                    </li>
-                    <li>
-                        <a href="/destination.html" class="navbar-link" data-nav-link>destinations</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-                    </li>
-                    <li>
-                        <?php if (isset($_SESSION['loggedin'])) : ?>
-                            <div class="dropdown">
-                                <a href="#" class="navbar-link dropdown-toggle">
-                                    <ion-icon name="person-circle-outline"></ion-icon>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="profile.php" class="dropdown-item">Profile</a>
-                                    <a href="activity.php" class="dropdown-item">Activity</a>
-                                    <a href="membership.php" class="dropdown-item">Membership</a>
-                                    <a href="logout.php" class="dropdown-item">Logout</a>
-                                </div>
-                            </div>
-                        <?php else : ?>
-                          <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
-                          
-                        <?php endif; ?>
-                    </li>
-                </ul>
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+            <li>
+              <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+            <li>
+              <a href="/destination.html" class="navbar-link" data-nav-link>destinations</a>
+            </li>
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+            <li>
+              <?php if (isset($_SESSION['loggedin'])) : ?>
+                <div class="dropdown">
+                  <a href="#" class="navbar-link dropdown-toggle">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="profile.php" class="dropdown-item">Profile</a>
+                    <a href="activity.php" class="dropdown-item">Activity</a>
+                    <a href="membership.php" class="dropdown-item">Membership</a>
+                    <a href="logout.php" class="dropdown-item">Logout</a>
+                  </div>
+                </div>
+              <?php else : ?>
+                <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
+
+              <?php endif; ?>
+            </li>
+          </ul>
 
         </nav>
 
@@ -282,16 +282,18 @@ session_start();
               <div class="package-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                  <img src="./assets/images/packages/package-1.jpg" alt="A Hidden Paradise Spring in Tupi, South Cotabato" loading="lazy">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+                  <h3 class="h3 card-title">A Hidden Paradise Spring in Tupi, South Cotabato</h3>
 
                   <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
+                    Escape from the hustle and bustle of the city.
+                    Visit Shellrock Garden Resort in Tupi, South
+                    Cotabato
+                    Shellrock Garden Resort
                   </p>
 
                   <ul class="card-meta-list">
@@ -300,7 +302,7 @@ session_start();
                       <div class="meta-box">
                         <ion-icon name="time"></ion-icon>
 
-                        <p class="text">7D/6N</p>
+                        <p class="text">12H</p>
                       </div>
                     </li>
 
@@ -316,7 +318,7 @@ session_start();
                       <div class="meta-box">
                         <ion-icon name="location"></ion-icon>
 
-                        <p class="text">Malaysia</p>
+                        <p class="text">Tupi, South Cotabato</p>
                       </div>
                     </li>
 
@@ -328,7 +330,7 @@ session_start();
 
                   <div class="wrapper">
 
-                    <p class="reviews">(25 reviews)</p>
+                    <p class="reviews">(0 reviews)</p>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -341,7 +343,7 @@ session_start();
                   </div>
 
                   <p class="price">
-                    $750
+                    ₱250
                     <span>/ per person</span>
                   </p>
 
@@ -356,16 +358,15 @@ session_start();
               <div class="package-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                  <img src="./assets/images/packages/package-2.jpg" alt="Trip to Lake Holon" loading="lazy">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
+                  <h3 class="h3 card-title">Trip to Lake Holon</h3>
 
                   <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
+                    Lake Holon is one of the hidden gems in Mindanao and a perfect destination for adventurers.
                   </p>
 
                   <ul class="card-meta-list">
@@ -390,7 +391,7 @@ session_start();
                       <div class="meta-box">
                         <ion-icon name="location"></ion-icon>
 
-                        <p class="text">Malaysia</p>
+                        <p class="text">T'boli, South Cotabato</p>
                       </div>
                     </li>
 
@@ -402,7 +403,7 @@ session_start();
 
                   <div class="wrapper">
 
-                    <p class="reviews">(20 reviews)</p>
+                    <p class="reviews">(0 reviews)</p>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -415,7 +416,7 @@ session_start();
                   </div>
 
                   <p class="price">
-                    $520
+                    ₱250
                     <span>/ per person</span>
                   </p>
 
@@ -430,16 +431,16 @@ session_start();
               <div class="package-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                  <img src="./assets/images/packages/package-3.jpg" alt="Strawberry Guyabano Farm" loading="lazy">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
+                  <h3 class="h3 card-title">Strawberry Guyabano Farm</h3>
 
                   <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
+                    Discover extraordinary farm life and give your loved one the most romantic getaway imaginable!
+Experience unparalleled farm life with breathtaking views of the majestic Mt.
                   </p>
 
                   <ul class="card-meta-list">
@@ -464,7 +465,7 @@ session_start();
                       <div class="meta-box">
                         <ion-icon name="location"></ion-icon>
 
-                        <p class="text">Malaysia</p>
+                        <p class="text">Tupi, South Cotabato</p>
                       </div>
                     </li>
 
@@ -476,7 +477,7 @@ session_start();
 
                   <div class="wrapper">
 
-                    <p class="reviews">(40 reviews)</p>
+                    <p class="reviews">(0 reviews)</p>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -489,7 +490,7 @@ session_start();
                   </div>
 
                   <p class="price">
-                    $660
+                    ₱250
                     <span>/ per person</span>
                   </p>
 
@@ -507,12 +508,12 @@ session_start();
         </div>
       </section>
 
-      <section class="tour-location-container" id= "tour-location-container">
+      <section class="tour-location-container" id="tour-location-container">
         <div class="tour-info">
-        <h2 class="h2 section-title">Tour Location</h2>
-        <p class="section-text">Check out our exciting tour packages tailored for different interests.</p>
+          <h2 class="h2 section-title">Tour Location</h2>
+          <p class="section-text">Check out our exciting tour packages tailored for different interests.</p>
           <div class="icons ">
-          <div class="icon-wrapper">
+            <div class="icon-wrapper">
               <a href="adventuretour.html" class="icon"><i class="fas fa-hiking"></i></a>
               <h3 class="h3 card-title">Adventure Tours</h3>
             </div>
@@ -522,7 +523,7 @@ session_start();
               <a href="swimmingpools.html" class="icon"><i class="fas fa-swimmer"></i></a>
               <h3 class="h3 card-title">Swimming Pool</h3>
             </div>
-            <p class="section-text" >Relax and Unwind</p>
+            <p class="section-text">Relax and Unwind</p>
 
             <div class="icon-wrapper">
               <a href="cityexploration.html" class="icon"><i class="fas fa-camera"></i></a>
@@ -536,8 +537,8 @@ session_start();
       </section>
 
       <section class="video_section" id="video_section">
-      <h2 class="h2 section-title">TOUR VIDEOS</h2>
-      <p class="section-text">Find out more with our video of the most beautiful and pleasant places for you and your family.</p>
+        <h2 class="h2 section-title">TOUR VIDEOS</h2>
+        <p class="section-text">Find out more with our video of the most beautiful and pleasant places for you and your family.</p>
 
         <div class="video__container container">
           <div class="video__content">
