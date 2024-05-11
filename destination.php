@@ -8,7 +8,7 @@ session_start();
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakbay Marista | Gallery </title>
+  <title>Lakbay Marista | Destinations </title>
 
   <link rel="shortcut icon" href="./assets/images/logoLM-dark.png" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/css/destinations.css">
@@ -57,13 +57,13 @@ session_start();
 
           <ul class="navbar-list">
                     <li>
-                        <a href="#home" class="navbar-link" data-nav-link>home</a>
+                        <a href="index.php" class="navbar-link" data-nav-link>home</a>
                     </li>
                     <li>
                         <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
                     </li>
                     <li>
-                        <a href="/destination.html" class="navbar-link" data-nav-link>destinations</a>
+                        <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
                     </li>
                     <li>
                         <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
@@ -274,7 +274,6 @@ session_start();
 
     <script src="imgs\destinations\featured.js"></script>
     <script src="/assets/js/script.js"></script>
-    <!-- Add this script before the closing </body> tag -->
     <script>
         var hoverModal = document.getElementById("hoverModal");
         var modalImg = document.getElementById("modalImage");
