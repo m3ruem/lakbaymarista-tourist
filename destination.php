@@ -41,7 +41,7 @@ session_start();
         <ul class="social-list">
           <li>
             <a href="#" class="logo-lm">
-              <img src="./assets/images/logoLM.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM.png">
+            <img src="./assets/images/logoLM-dark.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM-dark.png">
             </a>
 
           </li>
