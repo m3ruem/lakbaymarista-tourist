@@ -1,5 +1,20 @@
 <?php
 session_start();
+
+function getImagesFromFolder($folder) {
+    $images = [];
+    $files = scandir($folder);
+    foreach ($files as $file) {
+        $filePath = $folder . '/' . $file;
+       
+        if (is_file($filePath) && getimagesize($filePath)) {
+            $images[] = $filePath;
+        }
+    }
+    return $images;
+}
+
+$galleryImages = getImagesFromFolder('./assets/images/gallery');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +28,7 @@ session_start();
   <link rel="shortcut icon" href="./assets/images/logoLM-dark.png" type="image/svg+xml">
 
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/gallery.css">
   <link type="text/css" rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -108,6 +124,11 @@ session_start();
 
       </div>
     </div>
+    <div class="gallery">
+    <?php foreach ($galleryImages as $image): ?>
+      <img src="<?php echo $image; ?>" alt="Gallery Image">
+    <?php endforeach; ?>
+  </div>
 
   </header>
 
