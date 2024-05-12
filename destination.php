@@ -1,219 +1,335 @@
-<?php
-session_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
+<a?php session_start(); ?>
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakbay Marista | Destinations </title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakbay Marista | Destinations </title>
 
-  <link rel="shortcut icon" href="./assets/images/logoLM-dark.png" type="image/svg+xml">
-  <link rel="stylesheet" href="./assets/css/destinations.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link type="text/css" rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="shortcut icon" href="./assets/images/logoLM-dark.png" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/destinations.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
 
-<body id="top">
-  <style>
-    .navbar-list a {
-      color: black;
-    }
-  </style>
+  <body id="top">
+    <style>
+      .navbar-list a {
+        color: black;
+      }
+    </style>
 
 
-  <header class="header" data-header>
+    <header class="header" data-header>
 
-    <div class="overlay" data-overlay></div>
-    <div class="header-top">
-      <div class="container">
-        <div class="toggle-switch">
-          <input type="checkbox" id="mode-switch" onclick="toggleMode()">
-          <label for="mode-switch"></label>
-        </div>
-        <ul class="social-list">
-          <li>
-            <a href="#" class="logo-lm">
-            <img src="./assets/images/logoLM-dark.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM-dark.png">
-            </a>
+      <div class="overlay" data-overlay></div>
+      <div class="header-top">
+        <div class="container">
+          <div class="toggle-switch">
+            <input type="checkbox" id="mode-switch" onclick="toggleMode()">
+            <label for="mode-switch"></label>
+          </div>
+          <ul class="social-list">
+            <li>
+              <a href="index.php" class="logo-lm">
+                <img src="./assets/images/logoLM-dark.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM-dark.png">
+              </a>
 
-          </li>
-        </ul>
+            </li>
+          </ul>
 
-        <nav class="navbar" data-navbar>
+          <nav class="navbar" data-navbar>
 
-          <div class="navbar-top">
+            <div class="navbar-top">
 
-            <a href="#" class="logo">
-              <img src="./assets/images/logo-text-v2.png" alt="Lakbay Marista">
-            </a>
+              <a href="#" class="logo">
+                <img src="./assets/images/logo-text-v2.png" alt="Lakbay Marista">
+              </a>
 
-            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
+              <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="index.php" class="navbar-link" data-nav-link>home</a>
+              </li>
+              <li>
+                <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
+              </li>
+              <li>
+                <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
+              </li>
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+              </li>
+              <li>
+                <?php if (isset($_SESSION['loggedin'])) : ?>
+                  <div class="dropdown">
+                    <a href="#" class="navbar-link dropdown-toggle">
+                      <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="profile.php" class="dropdown-item">Profile</a>
+                      <a href="activity.php" class="dropdown-item">Activity</a>
+                      <a href="membership.php" class="dropdown-item">Membership</a>
+                      <a href="logout.php" class="dropdown-item">Logout</a>
+                    </div>
+                  </div>
+                <?php else : ?>
+                  <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
+
+                <?php endif; ?>
+              </li>
+            </ul>
+
+          </nav>
+
+
+          <div class="header-btn-group">
+
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+              <ion-icon name="menu-outline"></ion-icon>
             </button>
 
           </div>
 
-          <ul class="navbar-list">
-            <li>
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
-            </li>
-            <li>
-              <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
-            </li>
-            <li>
-              <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
-            </li>
-            <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-            </li>
-            <li>
-              <?php if (isset($_SESSION['loggedin'])) : ?>
-                <div class="dropdown">
-                  <a href="#" class="navbar-link dropdown-toggle">
-                    <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
-                  </a>
-                  <div class="dropdown-menu">
-                    <a href="profile.php" class="dropdown-item">Profile</a>
-                    <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
-                    <a href="logout.php" class="dropdown-item">Logout</a>
-                  </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+
+        </div>
+      </div>
+
+    </header>
+
+    <section class="featured">
+      <div class="gallery">
+        <div class="filter-buttons" style="justify-content:space-between; align-items:center; padding-bottom:250px; display:flex">
+          <button id="popular-btn">Popular</button>
+          <button id="featured-btn">Featured</button>
+          <button id="new-btn">New</button>
+          <button id="all-btn">All</button>
+        </div>
+
+        <div>
+          <a href="/destinationcontents/lkholon.html" class="box-link">
+            <div class="box box1">
+              <span class="label">Featured</span>
+              <img src="/imgs/destinations/lakeholon.jpg" alt="">
+              <div class="content">
+                <h2 style="font-family: Kanit, sans-serif;">LAKE HOLON</h2>
+                <p>T'boli, South Cotabato</p>
+                <div class="review-and-idr">
+                  <div class="review"><i class="fa fa-star"></i> 4.9 | 853 review</div>
+                  <p></p>
+                  <div class="writ"></div>
                 </div>
-              <?php else : ?>
-                <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
-
-              <?php endif; ?>
-            </li>
-          </ul>
-
-        </nav>
-
-
-        <div class="header-btn-group">
-
-          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
+                <div></div>
+              </div>
+            </div>
+          </a>
         </div>
 
+
+        <div>
+          <a href="/destinationcontents/7falls.html" class="box-link">
+            <div class="box box2">
+
+              <span class="label">Popular</span>
+              <img src="/imgs/destinations/7-falls.jpg" alt="">
+              <div class="content">
+                <h2 style="font-family: Kanit, sans-serif;">7-FALLS</h2>
+                <p>Lake Sebu, South Cotabatos</p>
+                <div class="review-and-idr">
+                  <div class="review"><i class="fa fa-star"></i> 4.8 | 852 review</div>
+                  <p>P0</p>
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="/destinationcontents/sgfarm.html" class="box-link">
+            <div class="box box3">
+
+              <span class="label"></span>
+              <img src="/imgs/destinations/sgfarm.png" alt="">
+              <div class="content">
+                <h2>SG-FARM</h2>
+                <p>Tupi, South Cotabato</p>
+                <div class="review-and-idr">
+                  <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
+                  <p>P0</p>
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+
+
+        <div class="box box3">
+          <a href="/destinationcontents/surralahtri.html">
+            <span class="label"></span>
+            <img src="https://4.bp.blogspot.com/-PP43Q8RCgjs/VuBq8m0CEwI/AAAAAAAAdiM/zR0uW9Ohwwo/s1600/DSC08992.JPG" alt="">
+            <div class="content">
+              <h2>Surralah Tri-People Monument</h2>
+              <p>Surralah, South Cotabato</p>
+              <div class="review-and-idr">
+                <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
+                <p>P0</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+
+
+        <div class="box box3">
+          <a href="/destinationcontents/mtmatutumfoot.html">
+            <span class="label"></span>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimGFEEJfww4Q4jOUTQSddyzI0fOMBcLLj5UV0PSjVQyBvUcFIqxqo_C1AaWaM59DFSrnPTYDN8zkgxpOQ9evGh1CDnsZE_WVIMIrMC15ONNDT5w9O-Iwoz8OvSjhGZxkIsg6ote8tbEFRr/s1600/DSCF0896.JPG" alt="">
+            <div class="content">
+              <h2>Mt. Matutum</h2>
+              <p>Polomolok, South Cotabato</p>
+              <div class="review-and-idr">
+                <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
+                <p>P0</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="box box3">
+          <a href="/destinationcontents/paraisoverde.html">
+            <span class="label"></span>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu7y-AgbyhHj6ZPSIkTWRwCPe5Su4_2pm6wMhYeuIpMw6Lb3VhfvR8P_TdnKH4HG1PyQzjqiWk9N5qWS6wMJJkCXqqD4AkH2IXc1n1i2Xfa_vBi3Ulba55qdA8243PpbptyiUba_YW8oI/s1600/paraiso.jpg" alt="">
+            <div class="content">
+              <h2>Paraiso Verde Resort & Water Park</h2>
+              <p>Koronadal City, South Cotabato</p>
+              <div class="review-and-idr">
+                <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
+                <p>P0</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="box box3">
+          <a href="/destinationcontents/siok.html">
+            <span class="label"></span>
+            <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.6435-9/116154248_157971259226151_4581289750263432113_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEwYAYRqQQT8j0911ilsSKZfY2F99NrVvB9jYX302tW8F3EdhsrrzQEmt5FPewJ7iUKdWmTRkurl-zyqwHwWP_k&_nc_ohc=kUk5PYyMVCUQ7kNvgHASUFS&_nc_ht=scontent-mnl1-1.xx&oh=00_AYAliTw2VQWttM93hDNbgdIfBun2rUVRdcac0WMxIgJF7g&oe=66680D49" alt="">
+            <div class="content">
+              <h2>Siok Falls</h2>
+              <p>Barangay Esperanza, South Cotabato</p>
+              <div class="review-and-idr">
+                <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
+                <p>P0</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="box box3">
+          <a href="/destinationcontents/bakngeb.html">
+            <span class="label"></span>
+            <img src="https://cdn-0.danielsecotravels.com/wp-content/uploads/2020/04/14947477_1219205421486879_1546680201691883658_n-1.jpg?ezimgfmt=ng:webp/ngcb14" alt="">
+            <div class="content">
+              <h2>Bakngeb River Cave Adventure in Tboli
+              </h2>
+              <p>T'boli, South Cotabato</p>
+              <div class="review-and-idr">
+                <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
+                <p>P0</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box box3">
+          <a href="/destinationcontents/gensanfishport.html">
+            <span class="label"></span>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVQP2hRClGnED3UgxXv-lXBxnWQkQlytVH2PRj-v3SaU8aT_93-EZNqeaxSoAYOpGC-wiiTgNvTHzotAK3NnZnxruDi3qwisEvLboZjwej1B412T0DmfKLdZqVEpntFYRPPznkgmESjcDe/s1600/DSCF1025.JPG" alt="">
+            <div class="content">
+              <h2>GenSanFish Port Complex</h2>
+              <p>General Santos City</p>
+              <div class="review-and-idr">
+                <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
+                <p>P0</p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
+    </section>
     </div>
 
-    <div class="header-bottom">
-      <div class="container">
+    <script src="imgs\destinations\featured.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script>
+      var galleryItems = document.querySelectorAll(".box");
 
-      </div>
-    </div>
-
-  </header>
-
-  <section class="featured">
-    <div class="gallery">
-      <div class="filter-buttons" style="justify-content:space-between; align-items:center; padding-bottom:250px; display:flex">
-        <button id="popular-btn">Popular</button>
-        <button id="featured-btn">Featured</button>
-        <button id="new-btn">New</button>
-        <button id="all-btn">All</button>
-      </div>
-      <div class="box box1">
-        <span class="label">Popular</span>
-        <img src="/imgs/destinations/lakeholon.jpg" alt="">
-        <div class="content">
-          <h2 style="font-family: Kanit, sans-serif;">LAKE HOLON</h2>
-          <p>T'boli, South Cotabato</p>
-          <div class="review-and-idr">
-            <div class="review"><i class="fa fa-star"></i> 4.9 | 853 review</div>
-            <p></p>
-            <div class="writ"></div>
-
-          </div>
-          <div></div>
-        </div>
-      </div>
-      <div class="box box2">
-        <span class="label">Popular</span>
-        <img src="/imgs/destinations/7-falls.jpg" alt="">
-        <div class="content">
-          <h2 style="font-family: Kanit, sans-serif;">7-FALLS</h2>
-          <p>Lake Sebu, South Cotabatos</p>
-          <div class="review-and-idr">
-            <div class="review"><i class="fa fa-star"></i> 4.8 | 852 review</div>
-            <p>P0</p>
-          </div>
-        </div>
-      </div>
-      <div class="box box3">
-        <span class="label">Featured</span>
-        <img src="/imgs/destinations/sgfarm.png" alt="">
-        <div class="content">
-          <h2>SG-FARM</h2>
-          <p>Tupi, South Cotabato</p>
-          <div class="review-and-idr">
-            <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
-            <p>P0</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  </div>
-
-  <script src="imgs\destinations\featured.js"></script>
-  <script src="/assets/js/script.js"></script>
-  <script>
-    var galleryItems = document.querySelectorAll(".box");
-
-    galleryItems.forEach(function(item) {
-      item.addEventListener("click", function() {
-        var destinationName = this.querySelector("h2").textContent;
-        window.location.href = "destination_detail.php?name=" + encodeURIComponent(destinationName);
+      galleryItems.forEach(function(item) {
+        item.addEventListener("click", function() {
+          var destinationName = this.querySelector("h2").textContent;
+          window.location.href = "destination_detail.php?name=" + encodeURIComponent(destinationName);
+        });
       });
-    });
-  </script>
-  <script>
-    document.getElementById('popular-btn').addEventListener('click', function() {
-      filterDestinations('popular');
-    });
-
-    document.getElementById('featured-btn').addEventListener('click', function() {
-      filterDestinations('featured');
-    });
-
-    document.getElementById('new-btn').addEventListener('click', function() {
-      filterDestinations('new');
-    });
-
-    document.getElementById('all-btn').addEventListener('click', function() {
-      filterDestinations('all');
-    });
-
-    function filterDestinations(category) {
-      var boxes = document.querySelectorAll('.box');
-      boxes.forEach(function(box) {
-        var isPopular = box.querySelector('.label') && box.querySelector('.label').innerText === 'Popular';
-        var isNew = box.querySelector('.label') && box.querySelector('.label').innerText === 'New';
-        var isFeatured = box.querySelector('.label') && box.querySelector('.label').innerText === 'Featured';
-        var isNull = box.querySelector('.label') && box.querySelector('.label').innerText === '';
-        if (category === 'all' || (category === 'popular' && isPopular) || (category === 'featured' && isFeatured) || (category === 'new' && isNew)) {
-          box.style.display = 'block';
-        } else {
-          box.style.display = 'none';
-        }
+    </script>
+    <script>
+      document.getElementById('popular-btn').addEventListener('click', function() {
+        filterDestinations('popular');
       });
-    }
-  </script>
 
-</body>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      document.getElementById('featured-btn').addEventListener('click', function() {
+        filterDestinations('featured');
+      });
 
-</html>
+      document.getElementById('new-btn').addEventListener('click', function() {
+        filterDestinations('new');
+      });
+
+      document.getElementById('all-btn').addEventListener('click', function() {
+        filterDestinations('all');
+      });
+
+      function filterDestinations(category) {
+        var boxes = document.querySelectorAll('.box');
+        boxes.forEach(function(box) {
+          var isPopular = box.querySelector('.label') && box.querySelector('.label').innerText === 'Popular';
+          var isNew = box.querySelector('.label') && box.querySelector('.label').innerText === 'New';
+          var isFeatured = box.querySelector('.label') && box.querySelector('.label').innerText === 'Featured';
+          var isNull = box.querySelector('.label') && box.querySelector('.label').innerText === '';
+          if (category === 'all' || (category === 'popular' && isPopular) || (category === 'featured' && isFeatured) || (category === 'new' && isNew)) {
+            box.style.display = 'block';
+          } else {
+            box.style.display = 'none';
+          }
+        });
+      }
+    </script>
+
+  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </html>
