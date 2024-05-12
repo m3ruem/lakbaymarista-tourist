@@ -10,6 +10,7 @@
   --title-color: #11443F;
   --text-color: #5B7B78;
   --body-color: #F5FFFE;
+  --var:white;
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 3rem;
@@ -42,7 +43,7 @@ body {
   margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color: var(--var);
   color: var(--text-color);
 }
 
@@ -418,6 +419,20 @@ body {
   margin: 0 20px;
   position: relative
 }
+.dark-mode .bixbox {
+  background: #1b1b1b;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  -khtml-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  -ms-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  -o-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1)
+}
 
 .bixbox {
   background: #ffffff;
@@ -766,10 +781,20 @@ img.curdown {
 
 .bigcontent .infox h1 {
   margin: 0 0 15px;
-  font-size: 21px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 28px;
-  color: #FFF
+  color: #000000;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+.dark-mode .bigcontent .infox h1 {
+  margin: 0 0 15px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-left: 20px;
+  color: #ffffff
 }
 
 .socialts {
@@ -786,7 +811,7 @@ img.curdown {
   margin-right: 2px;
   margin-bottom: 2px;
   background: #333;
-  color: #131313 !important;
+  color: #fffefe !important;
   padding: 0;
   line-height: 22px;
   font-size: 12px;
@@ -919,7 +944,17 @@ img.curdown {
   margin-bottom: 5px;
   display: block;
   color: #000000;
-  font-weight: 500
+  font-weight: bolder
+}
+.dark-mode .bigcontent .infox .wd-full b,
+.dark-mode .bigcontent .infox .wd-full h2,
+.dark-mode .bigcontent .infox .flex-wrap .fmed b {
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #ffffff;
+  font-weight:bolder
 }
 
 .bigcontent .infox .wd-full span {
