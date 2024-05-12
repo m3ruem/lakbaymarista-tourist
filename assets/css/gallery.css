@@ -8,9 +8,9 @@
 }
 
 .gallery img {
-  margin: 5px; /* Adjust margin between images */
-  max-height: 300px; /* Limit image height */
-  transition: transform 0.3s ease; /* CSS transition for smoother effect */
+  margin: 5px; 
+  max-height: 300px; 
+  transition: transform 0.3s ease; 
 }
 
 .gallery img:hover {
