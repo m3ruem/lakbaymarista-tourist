@@ -13,110 +13,109 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-        <title>Responsive Landing Page Islands</title>
-    </head>
-    <body id="top">
+        <title>7-falls</title>
+		<body id="top">
+			<style>
+			  .navbar-list a{
+				color:black;
+			  }
 
-        <header class="header" data-header>
+			  .login a{
+				color: rgb(255, 255, 255);
+			  }
 
-    <div class="overlay" data-overlay></div>
-    <div class="header-top">
-      <div class="container">
-        <div class="toggle-switch">
-          <input type="checkbox" id="mode-switch" onclick="toggleMode()">
-          <label for="mode-switch"></label>
-        </div>
-        <ul class="social-list">
-          <li>
-            <a href="#" class="logo-lm">
-              <img src="../assets/images/logoLM.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM.png">
-            </a>
-
-          </li>
-        </ul>
-
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a href="#" class="logo">
-              <img src="./assets/images/logo-text-v2.png" alt="Lakbay Marista">
-            </a>
-            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-          </div>
-          <ul class="navbar-list">
-            <li>
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
-            </li>
-            <li>
-              <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
-            </li>
-            <li>
-              <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
-            </li>
-            <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-            </li>
-            <?php if (isset($_SESSION['loggedin']) && $_SESSION['access_level'] >= 20) : ?>
-              <li>
-                <div class="dropdown">
-                  <a href="#" class="navbar-link dropdown-toggle">
-                    <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
-                  </a>
-                  <div class="dropdown-menu">
-                    <a href="profile.php" class="dropdown-item">Profile</a>
-                    <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
-                    <a href="dashboard.php" class="dropdown-item">Dashboard</a>
-                    <a href="logout.php" class="dropdown-item">Logout</a>
-                  </div>
-                </div>
-              </li>
-            <?php elseif (isset($_SESSION['loggedin'])) : ?>
-              <li>
-                <div class="dropdown">
-                  <a href="#" class="navbar-link dropdown-toggle">
-                    <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
-                  </a>
-                  <div class="dropdown-menu">
-                    <a href="profile.php" class="dropdown-item">Profile</a>
-                    <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
-                    <a href="logout.php" class="dropdown-item">Logout</a>
-                  </div>
-                </div>
-              </li>
-            <?php else : ?>
-              <li>
-                <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
-              </li>
-            <?php endif; ?>
-          </ul>
-        </nav>
-
-
-
-        <div class="header-btn-group">
-
-          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-      </div>
-    </div>
-
-  </header>
+			</style>
+		  
+		  
+			<header class="header" data-header>
+		  
+			  <div class="overlay" data-overlay></div>
+			  <div class="header-top">
+				<div class="container">
+				  <div class="toggle-switch">
+					<input type="checkbox" id="mode-switch" onclick="toggleMode()">
+					<label for="mode-switch"></label>
+				  </div>
+				  <ul class="social-list">
+					<li>
+					  <a href="#" class="logo-lm">
+						<img src="../assets/images/logoLM-dark.png" alt="Lakbay Marista" data-original-src="../assets/images/logoLM-dark.png">
+					  </a>
+		  
+					</li>
+				  </ul>
+		  
+				  <nav class="navbar" data-navbar>
+		  
+					<div class="navbar-top">
+		  
+					  <a href="#" class="logo">
+						<img src="../assets/images/logo-text-v2.png" alt="Lakbay Marista">
+					  </a>
+		  
+					  <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+						<ion-icon name="close-outline"></ion-icon>
+					  </button>
+		  
+					</div>
+		  
+					<ul class="navbar-list">
+					  <li>
+						<a href="#home" class="navbar-link" data-nav-link>home</a>
+					  </li>
+					  <li>
+						<a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
+					  </li>
+					  <li>
+						<a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
+					  </li>
+					  <li>
+						<a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+					  </li>
+					  <li>
+						<?php if (isset($_SESSION['loggedin'])) : ?>
+						  <div class="dropdown">
+							<a href="#" class="navbar-link dropdown-toggle">
+							  <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+							</a>
+							<div class="dropdown-menu">
+							  <a href="profile.php" class="dropdown-item">Profile</a>
+							  <a href="activity.php" class="dropdown-item">Activity</a>
+							  <a href="membership.php" class="dropdown-item">Membership</a>
+							  <a href="logout.php" class="dropdown-item">Logout</a>
+							</div>
+						  </div>
+						<?php else : ?>
+						  <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
+		  
+						<?php endif; ?>
+					  </li>
+					</ul>
+		  
+				  </nav>
+		  
+		  
+				  <div class="header-btn-group">
+		  
+					<button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+					  <ion-icon name="menu-outline"></ion-icon>
+					</button>
+		  
+				  </div>
+		  
+				</div>
+			  </div>
+		  
+			  <div class="header-bottom">
+				<div class="container">
+		  
+				</div>
+			  </div>
+		  
+			</header>
 
 
-        <main class='main'>
+        <main class='main' style="padding-top: 80px;">
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
 
@@ -226,19 +225,19 @@
                         <div class="infox">
                             <h1 class="entry-title" itemprop="name">7-falls</h1>
                             <div class='socialts'>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://asuracomic.net/manga/1908287720-return-of-the-mount-hua-sect/&t=Return of the Mount Hua Sect" target="_blank" class="fb">
+                                <a href="" target="_blank" class="fb">
                                     <i class="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
-                                <a href="https://www.twitter.com/intent/tweet?url=https://asuracomic.net/manga/1908287720-return-of-the-mount-hua-sect/&text=Return of the Mount Hua Sect" target="_blank" class="twt">
+                                <a href="" target="_blank" class="twt">
                                     <i class="fab fa-twitter"></i>
                                     <span>Twitter</span>
                                 </a>
-                                <a href="whatsapp://send?text=Return of the Mount Hua Sect https://asuracomic.net/manga/1908287720-return-of-the-mount-hua-sect/" target="_blank" class="wa">
+                                <a href="" target="_blank" class="wa">
                                     <i class="fab fa-whatsapp"></i>
                                     <span>WhatsApp</span>
                                 </a>
-                                <a href="https://pinterest.com/pin/create/button/?url=https://asuracomic.net/manga/1908287720-return-of-the-mount-hua-sect/&media=https://asuracomic.net/wp-content/uploads/2021/03/cover.jpg&description=Return of the Mount Hua Sect" target="_blank" class="pntrs">
+                                <a href="" target="_blank" class="pntrs">
                                     <i class="fab fa-pinterest-p"></i>
                                     <span>Pinterest</span>
                                 </a>
@@ -319,7 +318,9 @@
 
         <script src="../assets/js/gsap.min.js"></script>
         <script src="../assets/js/swiper-bundle.min.js"></script>
+		<script src="../destinations/script.js"></script>
         <script src="../assets/js/main.js"></script>
+		
     </body>
     
 </html>
