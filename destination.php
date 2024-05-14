@@ -24,6 +24,16 @@
       .navbar-list a {
         color: black;
       }
+
+      .filter-buttons {
+        display: inline-block;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        margin-bottom: 250px;
+        /* Adjust as needed */
+      }
     </style>
 
 
@@ -116,15 +126,16 @@
 
     <section class="featured">
       <div class="gallery">
-        <div class="filter-buttons" style="justify-content:space-between; align-items:center; padding-bottom:250px; display:flex">
+        <div class="filter-buttons">
           <button id="popular-btn">Popular</button>
           <button id="featured-btn">Featured</button>
           <button id="new-btn">New</button>
           <button id="all-btn">All</button>
         </div>
 
+
         <div>
-          <a href="/destinationcontents/lkholon.html" class="box-link">
+          <a href="/destinations/lakeholon.php" class="box-link">
             <div class="box box1">
               <span class="label">Featured</span>
               <img src="/imgs/destinations/lakeholon.jpg" alt="">
@@ -144,14 +155,14 @@
 
 
         <div>
-          <a href="/destinationcontents/7falls.html" class="box-link">
+          <a href="/destinations/7-falls.php" class="box-link">
             <div class="box box2">
 
               <span class="label">Popular</span>
               <img src="/imgs/destinations/7-falls.jpg" alt="">
               <div class="content">
                 <h2 style="font-family: Kanit, sans-serif;">7-FALLS</h2>
-                <p>Lake Sebu, South Cotabatos</p>
+                <p>Lake Sebu, South Cotabato</p>
                 <div class="review-and-idr">
                   <div class="review"><i class="fa fa-star"></i> 4.8 | 852 review</div>
                   <p>P0</p>
@@ -163,7 +174,7 @@
         </div>
 
         <div>
-          <a href="/destinationcontents/sgfarm.html" class="box-link">
+          <a href="/destinations/sgfarm.php" class="box-link">
             <div class="box box3">
 
               <span class="label"></span>
@@ -184,7 +195,7 @@
 
 
         <div class="box box3">
-          <a href="/destinationcontents/surralahtri.html">
+          <a href="/destinations/surralah.php">
             <span class="label"></span>
             <img src="https://4.bp.blogspot.com/-PP43Q8RCgjs/VuBq8m0CEwI/AAAAAAAAdiM/zR0uW9Ohwwo/s1600/DSC08992.JPG" alt="">
             <div class="content">
@@ -199,10 +210,8 @@
         </div>
 
 
-
-
         <div class="box box3">
-          <a href="/destinationcontents/mtmatutumfoot.html">
+          <a href="/destinations/matutum.php">
             <span class="label"></span>
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimGFEEJfww4Q4jOUTQSddyzI0fOMBcLLj5UV0PSjVQyBvUcFIqxqo_C1AaWaM59DFSrnPTYDN8zkgxpOQ9evGh1CDnsZE_WVIMIrMC15ONNDT5w9O-Iwoz8OvSjhGZxkIsg6ote8tbEFRr/s1600/DSCF0896.JPG" alt="">
             <div class="content">
@@ -218,7 +227,7 @@
 
 
         <div class="box box3">
-          <a href="/destinationcontents/paraisoverde.html">
+          <a href="/destinations/paraiso.php">
             <span class="label"></span>
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu7y-AgbyhHj6ZPSIkTWRwCPe5Su4_2pm6wMhYeuIpMw6Lb3VhfvR8P_TdnKH4HG1PyQzjqiWk9N5qWS6wMJJkCXqqD4AkH2IXc1n1i2Xfa_vBi3Ulba55qdA8243PpbptyiUba_YW8oI/s1600/paraiso.jpg" alt="">
             <div class="content">
@@ -234,7 +243,7 @@
 
 
         <div class="box box3">
-          <a href="/destinationcontents/siok.html">
+          <a href="/destinations/siok.php">
             <span class="label"></span>
             <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.6435-9/116154248_157971259226151_4581289750263432113_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEwYAYRqQQT8j0911ilsSKZfY2F99NrVvB9jYX302tW8F3EdhsrrzQEmt5FPewJ7iUKdWmTRkurl-zyqwHwWP_k&_nc_ohc=kUk5PYyMVCUQ7kNvgHASUFS&_nc_ht=scontent-mnl1-1.xx&oh=00_AYAliTw2VQWttM93hDNbgdIfBun2rUVRdcac0WMxIgJF7g&oe=66680D49" alt="">
             <div class="content">
@@ -250,7 +259,7 @@
 
 
         <div class="box box3">
-          <a href="/destinationcontents/bakngeb.html">
+          <a href="/destinations/bakngeb.php">
             <span class="label"></span>
             <img src="https://cdn-0.danielsecotravels.com/wp-content/uploads/2020/04/14947477_1219205421486879_1546680201691883658_n-1.jpg?ezimgfmt=ng:webp/ngcb14" alt="">
             <div class="content">
@@ -266,12 +275,27 @@
         </div>
 
         <div class="box box3">
-          <a href="/destinationcontents/gensanfishport.html">
+          <a href="/destinations/gensantuna.php">
             <span class="label"></span>
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVQP2hRClGnED3UgxXv-lXBxnWQkQlytVH2PRj-v3SaU8aT_93-EZNqeaxSoAYOpGC-wiiTgNvTHzotAK3NnZnxruDi3qwisEvLboZjwej1B412T0DmfKLdZqVEpntFYRPPznkgmESjcDe/s1600/DSCF1025.JPG" alt="">
             <div class="content">
               <h2>GenSanFish Port Complex</h2>
               <p>General Santos City</p>
+              <div class="review-and-idr">
+                <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
+                <p>P0</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box box3">
+          <a href="/destinations/divinemercy.php">
+            <span class="label"></span>
+            <img src="https://pandamentals.files.wordpress.com/2017/07/img_9781.jpg?w=840" alt="">
+            <div class="content">
+              <h2>Divine Mercy Sanctuary</h2>
+              <p>Lake Sebu, South Cotabato</p>
               <div class="review-and-idr">
                 <div class="review"><i class="fa fa-star"></i> 4.7 | 851 review</div>
                 <p>P0</p>

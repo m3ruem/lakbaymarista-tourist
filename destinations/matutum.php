@@ -121,40 +121,41 @@
             <div class="swiper-wrapper">
 
                 <section class="islands swiper-slide">
-                    <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="islands__bg">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmzjd2WI52UCOE91texmHy4oiFDPpI_xnvXUuBdduhMmkeoAu967Z9c1iflDpHJ9eqnaegoPccx-kWUpe2hs-qXV3d7H4jJlk8bLv-y4sQW9owxvJC1CCSl6gJ8dowZByLkef-P93LdUU/s1600/SOCCSKSARGEN+Region+Mindanao.JPG" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Situated in highland town of South Cotabato, the Seven Falls is an amazing natural wonder in Barangay Lake Siloton of the municipality of Lake Sebu.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Matutum</h1>
+                            <p class="islands__description">Mount Matutum is a dream destination for mountaineers and nature enthusiasts alike. This stratovolcano, the highest peak in the province at 2,286 meters (7,500 ft), beckons with its breathtaking beauty and challenging slopes.
+                            </p>
+                            <a href="/destinationcontents/mtmatutumfoot.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
 
 
                 <section class="islands swiper-slide">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="islands__bg">
+                    <img src="/assets/images/matutum2.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Challenge yourself with the 774-step climb to reach "Hikong Bente" (immeasurable), the tallest of the seven.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Matutum</h1>
+                            <p class="islands__description">The journey to conquer Matutum is as rewarding as the summit itself. Lush forests teeming with diverse flora and fauna provide a refreshing escape.  Keep an eye out for endangered species like the Philippine eagle and the tarsier, hidden gems of the mountain's ecosystem.</p>
+                            <a href="/destinationcontents/mtmatutumfoot.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
                 <section class="islands swiper-slide">
-                    <img src="/assets/images/gallery/7-falls.jpg" alt="" class="islands__bg">
+                    <img src="/assets/images/gallery/matutumpineapple02.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Destination that promises a refreshing escape, cultural immersion, and a chance to reconnect with nature's beauty.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Matutum</h1>
+                            <p class="islands__description">Mount Matutum offers an unforgettable experience.  The sense of accomplishment at the summit, the breathtaking views, and the rich cultural tapestry at the foot of the mountain will leave a lasting impression.</p>
+                            <a href="/destinationcontents/mtmatutumfoot.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
@@ -165,9 +166,9 @@
         <!--========== CONTROLS ==========-->
         <div class="controls gallery-thumbs">
             <div class="controls__container swiper-wrapper">
-                <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="controls__img swiper-slide">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="controls__img swiper-slide">
-                <img src="/assets/images/gallery/7-falls.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmzjd2WI52UCOE91texmHy4oiFDPpI_xnvXUuBdduhMmkeoAu967Z9c1iflDpHJ9eqnaegoPccx-kWUpe2hs-qXV3d7H4jJlk8bLv-y4sQW9owxvJC1CCSl6gJ8dowZByLkef-P93LdUU/s1600/SOCCSKSARGEN+Region+Mindanao.JPG" alt="" class="controls__img swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy3QQ7oXbdyHE3er-KeSviTxbmbW3guYTooOPy6nhyphenhyphenvJs-N4FR55R_K9N-3FDnED8UAdM2aARrUZGjSZMfGzr8huT89iF4zpY9oKMJSnH2LLjyjpRvIaUlzoyLmlmVQ-ZAdPQnazaCKBo/s1600/3rd+matutum.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQDJqCkqVz4MYqgF8fbvNO1-94HU0UHSS0r3DVEPjNu-JbF_bFhxing6hKjUKPePKJOIP_vtpkfKRodwsn0VeBoYHRiF_T8abQhdP_3Eb8MH6Ssb8HHPMV28_nqwP6QS9kb_QHybDDcJs/s1600/mt+matutum+and+pineapple+field.jpg" alt="" class="controls__img swiper-slide">
             </div>
         </div>
     </main>
@@ -188,7 +189,7 @@
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">7-falls</span></a>
+                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">Mt. Matutum</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -197,7 +198,7 @@
                         <div class="bigcontent nobigcover">
                             <div class="thumbook">
                                 <div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                                    <img class="wp-post-image" src="../assets/images/gallery/7-falls.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
+                                    <img class="wp-post-image" src="https://edgedavao.net/wp-content/uploads/2021/06/0627matutum-e1624758399460.jpeg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
                                     <div data-id="40871" class="bookmark"><i class="far fa-booking" aria-hidden="true"></i> Booking </div>
@@ -224,7 +225,7 @@
                                 </div>
                             </div>
                             <div class="infox">
-                                <h1 class="entry-title" itemprop="name">7-falls</h1>
+                                <h1 class="entry-title" itemprop="name">Mt. Matutum</h1>
                                 <div class='socialts'>
                                     <a href="" target="_blank" class="fb">
                                         <i class="fab fa-facebook-f"></i>
@@ -247,16 +248,10 @@
                                 <div class="wd-full">
 
                                     <div class="entry-content entry-content-single" itemprop="description">
-                                        <p>These enchanting falls are a captivating natural wonder in Lake Sebu, South Cotabato, and their beauty is truly awe-inspiring! 😊 You can explore them and enjoy the lush green surroundings when you visit this paradise. 🌿🌊
+                                        <p>Whether you're a seasoned mountaineer or an adventurer seeking a new challenge, the summit of Mount Matutum offers an experience that will stay with you forever. The sense of accomplishment upon reaching the peak, the breathtaking panoramic vistas that stretch out before you, and the humbling realization of the mountain's grandeur are truly unforgettable.
 
-                                            If you’re up for adventure, Lake Sebu also boasts the highest zip line in Southeast Asia, offering spectacular views of the falls and the surrounding greenery12. Happy exploring! 🌟</p>
-                                        <p>1. Hikong Alo (Passage Falls)</p>
-                                        <p>2. Hikong Bente (Immeasurable Falls)</p>
-                                        <p>3. Hikong B’Lebel (Zigzag Falls)</p>
-                                        <p>4. Hikong Lowig (Booth Falls)</p>
-                                        <p>5. Hikong K’Fo-I (Wild Flower Falls)</p>
-                                        <p>6. Hikong Ukol (Short Falls)</p>
-                                        <p>7. Hikong Tonok (Soil Falls)</p>
+                                        </p>
+
 
 
                                         <p>&nbsp;</p>
@@ -269,7 +264,7 @@
                                     <div class="fmed">
                                         <b>Location</b>
                                         <span>
-                                            Lakesebu, South Cotabato
+                                            Polomolok, South Cotabato
                                         </span>
                                     </div>
                                     <div class="fmed">

@@ -121,40 +121,41 @@
             <div class="swiper-wrapper">
 
                 <section class="islands swiper-slide">
-                    <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="islands__bg">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/c2/0a/b5/paraiso-verde-resort.jpg?w=1000&h=-1&s=1" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Situated in highland town of South Cotabato, the Seven Falls is an amazing natural wonder in Barangay Lake Siloton of the municipality of Lake Sebu.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Paraiso Verde</h1>
+                            <p class="islands__description">The resort boasts a tranquil atmosphere, perfect for unwinding after a long day. Take a refreshing dip in their inviting outdoor pool, the cool water washing away any stress.
+                            </p>
+                            <a href="/destinationcontents/paraisoverde.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
 
 
                 <section class="islands swiper-slide">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="islands__bg">
+                    <img src="https://images.trvl-media.com/lodging/40000000/39560000/39559900/39559815/f7ac448d.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Challenge yourself with the 774-step climb to reach "Hikong Bente" (immeasurable), the tallest of the seven.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Paraiso Verde</h1>
+                            <p class="islands__description">Paraiso Verde features a variety of well-appointed rooms to suit your needs.  Choose from standard rooms, ideal for solo travelers or couples, or spacious family rooms perfect for creating lasting memories with loved ones.</p>
+                            <a href="/destinationcontents/paraisoverde.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
                 <section class="islands swiper-slide">
-                    <img src="/assets/images/gallery/7-falls.jpg" alt="" class="islands__bg">
+                    <img src="https://images.trvl-media.com/lodging/40000000/39560000/39559900/39559815/3e8ddf72.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Destination that promises a refreshing escape, cultural immersion, and a chance to reconnect with nature's beauty.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Paraiso Verde</h1>
+                            <p class="islands__description">Paraiso Verde Resort offers the perfect blend of comfort, convenience, and a touch of paradise.  So, pack your bags, unwind by the pool, and experience the warm hospitality that awaits you at Paraiso Verde.</p>
+                            <a href="/destinationcontents/paraisoverde.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
@@ -165,9 +166,9 @@
         <!--========== CONTROLS ==========-->
         <div class="controls gallery-thumbs">
             <div class="controls__container swiper-wrapper">
-                <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="controls__img swiper-slide">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="controls__img swiper-slide">
-                <img src="/assets/images/gallery/7-falls.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/c2/0a/b5/paraiso-verde-resort.jpg?w=1000&h=-1&s=1" alt="" class="controls__img swiper-slide">
+                <img src="https://images.trvl-media.com/lodging/40000000/39560000/39559900/39559815/f7ac448d.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="" class="controls__img swiper-slide">
+                <img src="https://images.trvl-media.com/lodging/40000000/39560000/39559900/39559815/3e8ddf72.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="" class="controls__img swiper-slide">
             </div>
         </div>
     </main>
@@ -188,7 +189,7 @@
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">7-falls</span></a>
+                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">Paraiso Verde</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -197,7 +198,7 @@
                         <div class="bigcontent nobigcover">
                             <div class="thumbook">
                                 <div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                                    <img class="wp-post-image" src="../assets/images/gallery/7-falls.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
+                                    <img class="wp-post-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh45gBuAVniLiTEa0QsxpU77dj5e6714wOsDODEBzGZ7htDpehw_14YIxPlI0Lg7noDOJtvjcnjqpH82oEPlQ1XTMDgos0eqBLTp8iVsvxEOV1Mh1QVa2tTVm6daEA7ylIBRrO6nWT65hA/s1600/paraiso1.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
                                     <div data-id="40871" class="bookmark"><i class="far fa-booking" aria-hidden="true"></i> Booking </div>
@@ -224,7 +225,7 @@
                                 </div>
                             </div>
                             <div class="infox">
-                                <h1 class="entry-title" itemprop="name">7-falls</h1>
+                                <h1 class="entry-title" itemprop="name">Paraiso Verde Resort</h1>
                                 <div class='socialts'>
                                     <a href="" target="_blank" class="fb">
                                         <i class="fab fa-facebook-f"></i>
@@ -247,16 +248,10 @@
                                 <div class="wd-full">
 
                                     <div class="entry-content entry-content-single" itemprop="description">
-                                        <p>These enchanting falls are a captivating natural wonder in Lake Sebu, South Cotabato, and their beauty is truly awe-inspiring! 😊 You can explore them and enjoy the lush green surroundings when you visit this paradise. 🌿🌊
+                                        <p>Step off the vibrant streets of Koronadal and enter a world of serenity at Paraiso Verde. The resort's tranquil atmosphere invites you to unwind and recharge. Take a refreshing dip in their inviting outdoor pool, letting the cool water wash away the day's stress. Lounge comfortably on the sun loungers by the poolside,
 
-                                            If you’re up for adventure, Lake Sebu also boasts the highest zip line in Southeast Asia, offering spectacular views of the falls and the surrounding greenery12. Happy exploring! 🌟</p>
-                                        <p>1. Hikong Alo (Passage Falls)</p>
-                                        <p>2. Hikong Bente (Immeasurable Falls)</p>
-                                        <p>3. Hikong B’Lebel (Zigzag Falls)</p>
-                                        <p>4. Hikong Lowig (Booth Falls)</p>
-                                        <p>5. Hikong K’Fo-I (Wild Flower Falls)</p>
-                                        <p>6. Hikong Ukol (Short Falls)</p>
-                                        <p>7. Hikong Tonok (Soil Falls)</p>
+                                        </p>
+
 
 
                                         <p>&nbsp;</p>
@@ -269,7 +264,7 @@
                                     <div class="fmed">
                                         <b>Location</b>
                                         <span>
-                                            Lakesebu, South Cotabato
+                                            Koronadal City, South Cotabato
                                         </span>
                                     </div>
                                     <div class="fmed">

@@ -167,7 +167,7 @@ session_start();
 
             <li>
               <div class="popular-card">
-                <a href="./featured/lakesebu.html">
+                <a href="/destinations/7-falls.php">
 
                   <figure class="card-img">
                     <img src="./assets/images/featured/lakesebu-zipline.png" alt="Lake Sebu, South Cotabato" loading="ZIPLINE">

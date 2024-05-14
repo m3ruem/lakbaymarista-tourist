@@ -121,40 +121,41 @@
             <div class="swiper-wrapper">
 
                 <section class="islands swiper-slide">
-                    <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="islands__bg">
+                    <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/432110673_287846981003039_4133516281026849524_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF5fdG4AwaMquFB6zHhZ0GvPahvx5J9j349qG_Hkn2Pfqxu0pBavKLnpR72cIto95a0-MFUoEcLkXa6h5NK2_Ir&_nc_ohc=70WTtQ32BHwQ7kNvgEoHQdn&_nc_ht=scontent-hkg4-1.xx&oh=00_AYB6JmB1HrRXrIEawvVLtT3res2NDLADm3VyKsYjgo0__Q&oe=6647F636" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Situated in highland town of South Cotabato, the Seven Falls is an amazing natural wonder in Barangay Lake Siloton of the municipality of Lake Sebu.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Surallah</h1>
+                            <p class="islands__description">Visiting the Tri-People Monument is a great way to get a taste of the vibrant cultural heritage of Surallah. It's a perfect stop for a quick photo opportunity or a starting point to learn more about the fascinating T'boli, Ubo, and Blaan people.
+                            </p>
+                            <a href="/destinationcontents/surralahtri.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
 
 
                 <section class="islands swiper-slide">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="islands__bg">
+                    <img src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/432084176_287847317669672_9092270557578000862_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEAgp4OdxJjW3RJTSaA4YQfmA8vczLq4zCYDy9zMurjMLUCx_12E2CyqKDTm31aO0-GILTaqlUdOtcPocwisoQt&_nc_ohc=GdyyQvJ4r8cQ7kNvgEVi9uM&_nc_ht=scontent-hkg1-2.xx&oh=00_AYCqWPIwl67_3jB_RpINB_z_w24EdNb0w8cqEEQkpalYVg&oe=6647C90B" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Challenge yourself with the 774-step climb to reach "Hikong Bente" (immeasurable), the tallest of the seven.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Surallah</h1>
+                            <p class="islands__description">Located in a central area of Surallah, the Tri-People Monument is a popular landmark and a great stop to add to your itinerary while exploring the region.</p>
+                            <a href="/destinationcontents/surralahtri.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
                 <section class="islands swiper-slide">
-                    <img src="/assets/images/gallery/7-falls.jpg" alt="" class="islands__bg">
+                    <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/432156389_287847484336322_4685623601550315455_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGOtVWLlNKfBsnv8tlNzu5G9bj8xNhmI3n1uPzE2GYjeVd1i23IO3if97P2kAVwXg6kA53CFxxkHMPDI6gOWTtH&_nc_ohc=R3CXbEFhzSkQ7kNvgEwkCOc&_nc_ht=scontent-mnl1-1.xx&oh=00_AYBfdgRJYuBM5wl8tdtswPerTsh25uUakChELNFpdGp-og&oe=6647C163" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Destination that promises a refreshing escape, cultural immersion, and a chance to reconnect with nature's beauty.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Surallah</h1>
+                            <p class="islands__description">United around a towering Hegalong, a traditional T'boli instrument, the figures represent the harmony and unity between these three communities.</p>
+                            <a href="/destinationcontents/surralahtri.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
@@ -165,9 +166,9 @@
         <!--========== CONTROLS ==========-->
         <div class="controls gallery-thumbs">
             <div class="controls__container swiper-wrapper">
-                <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="controls__img swiper-slide">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="controls__img swiper-slide">
-                <img src="/assets/images/gallery/7-falls.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/432110673_287846981003039_4133516281026849524_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF5fdG4AwaMquFB6zHhZ0GvPahvx5J9j349qG_Hkn2Pfqxu0pBavKLnpR72cIto95a0-MFUoEcLkXa6h5NK2_Ir&_nc_ohc=70WTtQ32BHwQ7kNvgEoHQdn&_nc_ht=scontent-hkg4-1.xx&oh=00_AYB6JmB1HrRXrIEawvVLtT3res2NDLADm3VyKsYjgo0__Q&oe=6647F636" alt="" class="controls__img swiper-slide">
+                <img src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/432084176_287847317669672_9092270557578000862_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEAgp4OdxJjW3RJTSaA4YQfmA8vczLq4zCYDy9zMurjMLUCx_12E2CyqKDTm31aO0-GILTaqlUdOtcPocwisoQt&_nc_ohc=GdyyQvJ4r8cQ7kNvgEVi9uM&_nc_ht=scontent-hkg1-2.xx&oh=00_AYCqWPIwl67_3jB_RpINB_z_w24EdNb0w8cqEEQkpalYVg&oe=6647C90B" alt="" class="controls__img swiper-slide">
+                <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/432156389_287847484336322_4685623601550315455_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGOtVWLlNKfBsnv8tlNzu5G9bj8xNhmI3n1uPzE2GYjeVd1i23IO3if97P2kAVwXg6kA53CFxxkHMPDI6gOWTtH&_nc_ohc=R3CXbEFhzSkQ7kNvgEwkCOc&_nc_ht=scontent-mnl1-1.xx&oh=00_AYBfdgRJYuBM5wl8tdtswPerTsh25uUakChELNFpdGp-og&oe=6647C163" alt="" class="controls__img swiper-slide">
             </div>
         </div>
     </main>
@@ -188,7 +189,7 @@
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">7-falls</span></a>
+                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">Surallah</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -197,7 +198,7 @@
                         <div class="bigcontent nobigcover">
                             <div class="thumbook">
                                 <div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                                    <img class="wp-post-image" src="../assets/images/gallery/7-falls.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
+                                    <img class="wp-post-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH8m3f7utowcrdvp6i9pXcS8YyszI9Om0XFl8vNhvIcTrPGBSNLlKQJd8n6Npiatx6XDs-CBfHHY8dOCln21iHc5aSiTSVja1DttcKkqflRFWhaYx6hh4IHCS2fySAVtz18uKz6fGoKkiWsZkJ0AVpZgNUaWrKpWSB2dnaRtDJmWhdahWNFmTpnH4WJmg8/w640-h434/362660300_6573904922648561_4995648859316839645_n.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
                                     <div data-id="40871" class="bookmark"><i class="far fa-booking" aria-hidden="true"></i> Booking </div>
@@ -224,7 +225,7 @@
                                 </div>
                             </div>
                             <div class="infox">
-                                <h1 class="entry-title" itemprop="name">7-falls</h1>
+                                <h1 class="entry-title" itemprop="name">Tri- People Monument</h1>
                                 <div class='socialts'>
                                     <a href="" target="_blank" class="fb">
                                         <i class="fab fa-facebook-f"></i>
@@ -247,16 +248,10 @@
                                 <div class="wd-full">
 
                                     <div class="entry-content entry-content-single" itemprop="description">
-                                        <p>These enchanting falls are a captivating natural wonder in Lake Sebu, South Cotabato, and their beauty is truly awe-inspiring! 😊 You can explore them and enjoy the lush green surroundings when you visit this paradise. 🌿🌊
+                                        <p>Journey to Surallah, South Cotabato, and you'll be greeted by a unique landmark - the Tri-People Monument. This impressive structure isn't just a pretty sight, it's a powerful symbol of unity and cultural diversity.
 
-                                            If you’re up for adventure, Lake Sebu also boasts the highest zip line in Southeast Asia, offering spectacular views of the falls and the surrounding greenery12. Happy exploring! 🌟</p>
-                                        <p>1. Hikong Alo (Passage Falls)</p>
-                                        <p>2. Hikong Bente (Immeasurable Falls)</p>
-                                        <p>3. Hikong B’Lebel (Zigzag Falls)</p>
-                                        <p>4. Hikong Lowig (Booth Falls)</p>
-                                        <p>5. Hikong K’Fo-I (Wild Flower Falls)</p>
-                                        <p>6. Hikong Ukol (Short Falls)</p>
-                                        <p>7. Hikong Tonok (Soil Falls)</p>
+                                        </p>
+
 
 
                                         <p>&nbsp;</p>
