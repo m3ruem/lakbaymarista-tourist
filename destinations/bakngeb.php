@@ -121,40 +121,46 @@
             <div class="swiper-wrapper">
 
                 <section class="islands swiper-slide">
-                    <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="islands__bg">
+                    <img src="https://www.traveltothephilippines.info/wp-content/uploads/2019/10/South-Cotabato-Bakngeb-River-Cave16.jpg" alt="" class="islands__bg">
+                    
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Situated in highland town of South Cotabato, the Seven Falls is an amazing natural wonder in Barangay Lake Siloton of the municipality of Lake Sebu.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Bakngeb River Cave</h1>
+                            <p class="islands__description">Stepping into the cave is like entering another world. Sunlight gives way to a cool, refreshing darkness illuminated by strategically placed headlamps.
+
+
+                            </p>
+                            <a href="/destinationcontents/bakngeb.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
 
 
                 <section class="islands swiper-slide">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="islands__bg">
+                    <img src="https://4.bp.blogspot.com/-rHaFeCra2CQ/Vq5kVYNTF_I/AAAAAAAAcug/cyol9C7jBAc/s640/bakngeb006.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Challenge yourself with the 774-step climb to reach "Hikong Bente" (immeasurable), the tallest of the seven.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Bakngeb River Cave</h1>
+                            <p class="islands__description">The true magic of Bakngeb River Cave unfolds as you reach the heart of the cavern.  A wide river emerges, its crystal-clear waters fed by an underground source. This natural pool beckons you in for a refreshing dip.  Imagine the feeling of cool water washing away the heat of the day as you float amidst the grandeur of the cave.
+
+</p>
+                            <a href="/destinationcontents/bakngeb.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
                 <section class="islands swiper-slide">
-                    <img src="/assets/images/gallery/7-falls.jpg" alt="" class="islands__bg">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYR2zZJzrhQQZwmvBeEu2rN4Qy7813MwQu_T2OTGz8jTfMYnOAaukaszjNYlZff3Q3xJWiQ2PmBkz2r4gkScuHf6pw49MaEN3IbnGjDWt8v0nBwXkpNwMr6MrYCHJpULjJ7hCbJEs2iLKe/s640/bakngeb008.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Destination that promises a refreshing escape, cultural immersion, and a chance to reconnect with nature's beauty.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Bakngeb River Cave</h1>
+                            <p class="islands__description">Bakngeb River Cave offers more than just a swim.  Several options allow you to explore the cave in a unique way.  Climb aboard a sturdy bamboo raft and navigate the river, marveling at the towering rock formations from a different perspective.</p>
+                            <a href="/destinationcontents/bakngeb.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
@@ -165,9 +171,9 @@
         <!--========== CONTROLS ==========-->
         <div class="controls gallery-thumbs">
             <div class="controls__container swiper-wrapper">
-                <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="controls__img swiper-slide">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="controls__img swiper-slide">
-                <img src="/assets/images/gallery/7-falls.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://www.traveltothephilippines.info/wp-content/uploads/2019/10/South-Cotabato-Bakngeb-River-Cave16.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://4.bp.blogspot.com/-rHaFeCra2CQ/Vq5kVYNTF_I/AAAAAAAAcug/cyol9C7jBAc/s640/bakngeb006.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYR2zZJzrhQQZwmvBeEu2rN4Qy7813MwQu_T2OTGz8jTfMYnOAaukaszjNYlZff3Q3xJWiQ2PmBkz2r4gkScuHf6pw49MaEN3IbnGjDWt8v0nBwXkpNwMr6MrYCHJpULjJ7hCbJEs2iLKe/s640/bakngeb008.jpg" alt="" class="controls__img swiper-slide">
             </div>
         </div>
     </main>
@@ -188,7 +194,7 @@
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">7-falls</span></a>
+                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">Bakngeb</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -197,7 +203,7 @@
                         <div class="bigcontent nobigcover">
                             <div class="thumbook">
                                 <div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                                    <img class="wp-post-image" src="../assets/images/gallery/7-falls.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
+                                    <img class="wp-post-image" src="https://steemitimages.com/DQmVeXtB64FvZUmPGDxGKLVskze6tFTeZrPvhk2XmyPncKz/12046762_1142855979075757_3387131697337026791_n.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
                                     <div data-id="40871" class="bookmark"><i class="far fa-booking" aria-hidden="true"></i> Booking </div>
@@ -224,28 +230,33 @@
                                 </div>
                             </div>
                             <div class="infox">
-                                <h1 class="entry-title" itemprop="name">7-falls</h1>
+                                <h1 class="entry-title" itemprop="name">Bakngeb River Cave</h1>
                                 <div class='socialts'>
-                                    <a href="https://www.facebook.com/pages/Lake%20Sebu%207%20Falls%20South%20Cotabato/200821290049587/" target="_blank" class="fb">
+                                    <a href="" target="_blank" class="fb">
                                         <i class="fab fa-facebook-f"></i>
                                         <span>Facebook</span>
                                     </a>
-                                    
+                                    <a href="" target="_blank" class="twt">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>Twitter</span>
+                                    </a>
+                                    <a href="" target="_blank" class="wa">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>WhatsApp</span>
+                                    </a>
+                                    <a href="" target="_blank" class="pntrs">
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <span>Pinterest</span>
+                                    </a>
                                 </div>
 
                                 <div class="wd-full">
 
                                     <div class="entry-content entry-content-single" itemprop="description">
-                                        <p>These enchanting falls are a captivating natural wonder in Lake Sebu, South Cotabato, and their beauty is truly awe-inspiring! 😊 You can explore them and enjoy the lush green surroundings when you visit this paradise. 🌿🌊
+                                        <p>It's a chance to challenge yourself, witness geological wonders, cool off in refreshing waters, and gain a glimpse into the local culture. So, pack your sense of adventure, grab your headlamp, and embark on a journey to discover the hidden gem that awaits in the heart of South Cotabato.
 
-                                            If you’re up for adventure, Lake Sebu also boasts the highest zip line in Southeast Asia, offering spectacular views of the falls and the surrounding greenery12. Happy exploring! 🌟</p>
-                                        <p>1. Hikong Alo (Passage Falls)</p>
-                                        <p>2. Hikong Bente (Immeasurable Falls)</p>
-                                        <p>3. Hikong B’Lebel (Zigzag Falls)</p>
-                                        <p>4. Hikong Lowig (Booth Falls)</p>
-                                        <p>5. Hikong K’Fo-I (Wild Flower Falls)</p>
-                                        <p>6. Hikong Ukol (Short Falls)</p>
-                                        <p>7. Hikong Tonok (Soil Falls)</p>
+                                        </p>
+
 
 
                                         <p>&nbsp;</p>
@@ -258,7 +269,7 @@
                                     <div class="fmed">
                                         <b>Location</b>
                                         <span>
-                                            Lakesebu, South Cotabato
+                                            T'boli, South Cotabato
                                         </span>
                                     </div>
                                     <div class="fmed">

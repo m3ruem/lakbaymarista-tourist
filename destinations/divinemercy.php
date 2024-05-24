@@ -121,40 +121,44 @@
             <div class="swiper-wrapper">
 
                 <section class="islands swiper-slide">
-                    <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="islands__bg">
+                    <img src="http://static1.squarespace.com/static/576ddcd66a4963e8802c32c5/t/57751b1af76cad4ff14ca088/1467294248367//img.jpg.com/static/576ddcd66a4963e8802c32c5/t/57751b1af76cad4ff14ca089/1467292442480/1000w/" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Situated in highland town of South Cotabato, the Seven Falls is an amazing natural wonder in Barangay Lake Siloton of the municipality of Lake Sebu.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Divine Mercy</h1>
+                            <p class="islands__description">The Divine Mercy Sanctuary isn't just a spiritual haven; it's a photographer's paradise! Capture breathtaking panoramic views of Lake Sebu and the surrounding mountains.
+
+                                
+                            </p>
+                            <a href="/destinationcontents/sgfarm.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
 
 
                 <section class="islands swiper-slide">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="islands__bg">
+                    <img src="https://lh3.googleusercontent.com/_fsodk-D8Sd-LF91s3AAA3ckch8zCTIHuKs1RC40oVcO71-UeOgC0H3Xl_QN6qNSODhP97iK7waGTjYYGhxE23MrogRANW9T_m_zw3YdaMPAvp-cILISQfhoUJUkgYmeBp80oQdzYftb-07nltqqbV06XZ1TSsqyCgJnQoRPW5SN0BEYtseydTIm_fTJssqQ8NGl698qA_PZkuYjDQ-4kT0i88N_6wZI9tdNN5VC6L4YzifopUEnIKEGpHTwxe6Mn_QgYM8LBQHbu_AW86wBdKeeADKmGEiOY44XxKrChWqOK-4EegqtDyp67uq3HjK1BeSdf3e6gLMClEgVVZCJpwWA1sIr0OLIQ3xhfQ4c5eI5hBQvzlnsftArh0b9YCgVuXsFDk0sih3ANt5GXbH4t7FSq2TBJpKzI4xo-gobPnmcHa9bNprb8DGSe7_1HBfo6pYSCYiOBi_Ol1VDMMGCtdtZe8t9RFlU2Bt4JydW2Wkov_Z0iS90UkMSiV1jRg-H8VkSWpAE8pHLK5HOo7AtCM8T4zlYcNPt3NROqS4eJ47XWAjrco4HRtouMePbH9VH6p4eb3MbsHlvmzTEQj8egZW0GTx3eOU=w1199-h799-no" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Challenge yourself with the 774-step climb to reach "Hikong Bente" (immeasurable), the tallest of the seven.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">SG FARM</h1>
+                            <p class="islands__description">Get a close-up of the majestic Divine Mercy statue, its details gleaming under the warm South Cotabato sun.
+</p>
+                            <a href="/destinationcontents/sgfarm.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
                 <section class="islands swiper-slide">
-                    <img src="/assets/images/gallery/7-falls.jpg" alt="" class="islands__bg">
+                    <img src="https://i.redd.it/f9qgzm98nl8b1.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Destination that promises a refreshing escape, cultural immersion, and a chance to reconnect with nature's beauty.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">SG FARM</h1>
+                            <p class="islands__description">Share your experience and inspire others with stunning photos that showcase the beauty of this unique place.</p>
+                            <a href="/destinationcontents/sgfarm.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
@@ -165,9 +169,9 @@
         <!--========== CONTROLS ==========-->
         <div class="controls gallery-thumbs">
             <div class="controls__container swiper-wrapper">
-                <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="controls__img swiper-slide">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="controls__img swiper-slide">
-                <img src="/assets/images/gallery/7-falls.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://southcotabato.gov.ph/wp-content/uploads/2023/10/SG-FARM.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/05/sg-farm-1-scaled-1.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://i.redd.it/f9qgzm98nl8b1.jpg" alt="" class="controls__img swiper-slide">
             </div>
         </div>
     </main>
@@ -188,7 +192,7 @@
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">7-falls</span></a>
+                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">SG FARM</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -197,7 +201,7 @@
                         <div class="bigcontent nobigcover">
                             <div class="thumbook">
                                 <div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                                    <img class="wp-post-image" src="../assets/images/gallery/7-falls.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
+                                    <img class="wp-post-image" src="https://i.ytimg.com/vi/iBb13bC4xMU/maxresdefault.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
                                     <div data-id="40871" class="bookmark"><i class="far fa-booking" aria-hidden="true"></i> Booking </div>
@@ -224,9 +228,9 @@
                                 </div>
                             </div>
                             <div class="infox">
-                                <h1 class="entry-title" itemprop="name">7-falls</h1>
+                                <h1 class="entry-title" itemprop="name">Strawberry Guyabano Farm</h1>
                                 <div class='socialts'>
-                                    <a href="https://www.facebook.com/pages/Lake%20Sebu%207%20Falls%20South%20Cotabato/200821290049587/" target="_blank" class="fb">
+                                    <a href="https://www.facebook.com/devinemercyretreat.house" target="_blank" class="fb">
                                         <i class="fab fa-facebook-f"></i>
                                         <span>Facebook</span>
                                     </a>
@@ -236,16 +240,8 @@
                                 <div class="wd-full">
 
                                     <div class="entry-content entry-content-single" itemprop="description">
-                                        <p>These enchanting falls are a captivating natural wonder in Lake Sebu, South Cotabato, and their beauty is truly awe-inspiring! 😊 You can explore them and enjoy the lush green surroundings when you visit this paradise. 🌿🌊
-
-                                            If you’re up for adventure, Lake Sebu also boasts the highest zip line in Southeast Asia, offering spectacular views of the falls and the surrounding greenery12. Happy exploring! 🌟</p>
-                                        <p>1. Hikong Alo (Passage Falls)</p>
-                                        <p>2. Hikong Bente (Immeasurable Falls)</p>
-                                        <p>3. Hikong B’Lebel (Zigzag Falls)</p>
-                                        <p>4. Hikong Lowig (Booth Falls)</p>
-                                        <p>5. Hikong K’Fo-I (Wild Flower Falls)</p>
-                                        <p>6. Hikong Ukol (Short Falls)</p>
-                                        <p>7. Hikong Tonok (Soil Falls)</p>
+                                        <p>Whether you're a family with kids, a group of friends, or a solo adventurer, SG Farm has something for everyone. Explore the farm, take a dip in their swimming pool, or simply relax in their cozy accommodations.</p>
+                                        
 
 
                                         <p>&nbsp;</p>
@@ -258,7 +254,8 @@
                                     <div class="fmed">
                                         <b>Location</b>
                                         <span>
-                                            Lakesebu, South Cotabato
+                                            Glandang Rd, Tupi, South Cotabato
+
                                         </span>
                                     </div>
                                     <div class="fmed">

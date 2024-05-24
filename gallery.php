@@ -56,7 +56,7 @@ $galleryImages = getImagesFromFolder('./assets/images/gallery');
         </div>
         <ul class="social-list">
           <li>
-            <a href="#" class="logo-lm">
+            <a href="index.php" class="logo-lm">
               <img src="./assets/images/logoLM-dark.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM-dark.png">
             </a>
 
@@ -79,7 +79,7 @@ $galleryImages = getImagesFromFolder('./assets/images/gallery');
 
           <ul class="navbar-list">
             <li>
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
+              <a href="index.php" class="navbar-link" data-nav-link>home</a>
             </li>
             <li>
               <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
@@ -88,7 +88,7 @@ $galleryImages = getImagesFromFolder('./assets/images/gallery');
               <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
             </li>
             <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+              <a href="contactus.php" class="navbar-link" data-nav-link>contact us</a>
             </li>
             <li>
               <?php if (isset($_SESSION['loggedin'])) : ?>

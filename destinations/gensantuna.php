@@ -121,40 +121,49 @@
             <div class="swiper-wrapper">
 
                 <section class="islands swiper-slide">
-                    <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="islands__bg">
+                    <img src="https://eastasiaroyalehotel.com/wp-content/uploads/2018/10/Tuna.jpg" alt="" class="islands__bg">
+
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Situated in highland town of South Cotabato, the Seven Falls is an amazing natural wonder in Barangay Lake Siloton of the municipality of Lake Sebu.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Gensan Fish Port</h1>
+                            <p class="islands__description">GenSan Fish Port Complex stands as a shining example of the indomitable spirit of General Santos City, embodying the resilience, diversity, and vitality of its people.
+
+
+                            </p>
+                            <a href="/destinationcontents/bakngeb.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
 
 
                 <section class="islands swiper-slide">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="islands__bg">
+                    <img src="https://ak-d.tripcdn.com/images/1009hk115163augu87E80.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Challenge yourself with the 774-step climb to reach "Hikong Bente" (immeasurable), the tallest of the seven.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Gensan Fish Port</h1>
+                            <p class="islands__description">The GSFPC isn't just a market; it's a window into the lifeblood of the region. Learn about the vital role the fishing industry plays in South Cotabato's economy and the dedication of the fishermen who brave the waves to bring us this bounty.
+
+
+
+
+                            </p>
+                            <a href="/destinationcontents/bakngeb.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
                 <section class="islands swiper-slide">
-                    <img src="/assets/images/gallery/7-falls.jpg" alt="" class="islands__bg">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/7a/9b/b3/general-santos-city-fish.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
-                            <h2 class="islands__subtitle">Falls</h2>
-                            <h1 class="islands__title">7-Falls</h1>
-                            <p class="islands__description">Destination that promises a refreshing escape, cultural immersion, and a chance to reconnect with nature's beauty.</p>
-                            <a href="/destinationcontents/7falls.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <h2 class="islands__subtitle"></h2>
+                            <h1 class="islands__title">Gensan Fish Port</h1>
+                            <p class="islands__description">Bakngeb River Cave offers more than just a swim. Several options allow you to explore the cave in a unique way. Climb aboard a sturdy bamboo raft and navigate the river, marveling at the towering rock formations from a different perspective.</p>
+                            <a href="/destinationcontents/bakngeb.html" class="islands__button">View More <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                         </div>
                     </div>
                 </section>
@@ -165,9 +174,9 @@
         <!--========== CONTROLS ==========-->
         <div class="controls gallery-thumbs">
             <div class="controls__container swiper-wrapper">
-                <img src="https://southcotabato.gov.ph/wp-content/uploads/2021/07/Falls-scaled-1.jpg" alt="" class="controls__img swiper-slide">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDSR-ihkS_gfC56m04OXacRpkytpO83ipYL7ARw_h-WcD8WoS1cEWqr1Jqyqefck3MUokfqnQIkhcrowt5RO3zsFPT1mKxhYiOh61RVBe7jvseiAXf-FBAVyeJ_MmpCMz_ndWkDcV5OdtC/s1600/05+lake+sebu+seven+falls+zipline.jpg" alt="" class="controls__img swiper-slide">
-                <img src="/assets/images/gallery/7-falls.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://eastasiaroyalehotel.com/wp-content/uploads/2018/10/Tuna.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://ak-d.tripcdn.com/images/1009hk115163augu87E80.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/7a/9b/b3/general-santos-city-fish.jpg" alt="" class="controls__img swiper-slide">
             </div>
         </div>
     </main>
@@ -188,7 +197,7 @@
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">7-falls</span></a>
+                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">Gensan Fish Port</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -197,7 +206,7 @@
                         <div class="bigcontent nobigcover">
                             <div class="thumbook">
                                 <div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                                    <img class="wp-post-image" src="../assets/images/gallery/7-falls.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
+                                    <img class="wp-post-image" src="https://pbs.twimg.com/media/Ce7rOquWwAEa8la.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
                                     <div data-id="40871" class="bookmark"><i class="far fa-booking" aria-hidden="true"></i> Booking </div>
@@ -224,28 +233,32 @@
                                 </div>
                             </div>
                             <div class="infox">
-                                <h1 class="entry-title" itemprop="name">7-falls</h1>
+                                <h1 class="entry-title" itemprop="name">Gensan Fish Port Complex</h1>
                                 <div class='socialts'>
-                                    <a href="https://www.facebook.com/pages/Lake%20Sebu%207%20Falls%20South%20Cotabato/200821290049587/" target="_blank" class="fb">
+                                    <a href="" target="_blank" class="fb">
                                         <i class="fab fa-facebook-f"></i>
                                         <span>Facebook</span>
                                     </a>
-                                    
+                                    <a href="" target="_blank" class="twt">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>Twitter</span>
+                                    </a>
+                                    <a href="" target="_blank" class="wa">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>WhatsApp</span>
+                                    </a>
+                                    <a href="" target="_blank" class="pntrs">
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <span>Pinterest</span>
+                                    </a>
                                 </div>
 
                                 <div class="wd-full">
 
                                     <div class="entry-content entry-content-single" itemprop="description">
-                                        <p>These enchanting falls are a captivating natural wonder in Lake Sebu, South Cotabato, and their beauty is truly awe-inspiring! 😊 You can explore them and enjoy the lush green surroundings when you visit this paradise. 🌿🌊
+                                        <p>The Gensan Fish Port Complex is an experience that goes beyond just buying seafood. It's a chance to witness the heart of a thriving industry, delve into the local culture, and embark on your own mini-adventure. So, are you ready to dive into the fresh flavors, vibrant energy, and captivating sights of the Gensan Fish Port Complex? We guarantee it'll be an experience you won't forget!
+                                        </p>
 
-                                            If you’re up for adventure, Lake Sebu also boasts the highest zip line in Southeast Asia, offering spectacular views of the falls and the surrounding greenery12. Happy exploring! 🌟</p>
-                                        <p>1. Hikong Alo (Passage Falls)</p>
-                                        <p>2. Hikong Bente (Immeasurable Falls)</p>
-                                        <p>3. Hikong B’Lebel (Zigzag Falls)</p>
-                                        <p>4. Hikong Lowig (Booth Falls)</p>
-                                        <p>5. Hikong K’Fo-I (Wild Flower Falls)</p>
-                                        <p>6. Hikong Ukol (Short Falls)</p>
-                                        <p>7. Hikong Tonok (Soil Falls)</p>
 
 
                                         <p>&nbsp;</p>
@@ -258,7 +271,7 @@
                                     <div class="fmed">
                                         <b>Location</b>
                                         <span>
-                                            Lakesebu, South Cotabato
+                                            General Santos City
                                         </span>
                                     </div>
                                     <div class="fmed">
