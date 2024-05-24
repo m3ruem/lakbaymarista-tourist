@@ -230,22 +230,11 @@
                             <div class="infox">
                                 <h1 class="entry-title" itemprop="name">Strawberry Guyabano Farm</h1>
                                 <div class='socialts'>
-                                    <a href="" target="_blank" class="fb">
+                                    <a href="https://www.facebook.com/devinemercyretreat.house" target="_blank" class="fb">
                                         <i class="fab fa-facebook-f"></i>
                                         <span>Facebook</span>
                                     </a>
-                                    <a href="" target="_blank" class="twt">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a href="" target="_blank" class="wa">
-                                        <i class="fab fa-whatsapp"></i>
-                                        <span>WhatsApp</span>
-                                    </a>
-                                    <a href="" target="_blank" class="pntrs">
-                                        <i class="fab fa-pinterest-p"></i>
-                                        <span>Pinterest</span>
-                                    </a>
+                                    
                                 </div>
 
                                 <div class="wd-full">

@@ -62,8 +62,9 @@ session_start();
               <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
             </li>
             <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+              <a href="contactus.php" class="navbar-link" data-nav-link>contact us</a>
             </li>
+
             <?php if (isset($_SESSION['loggedin']) && $_SESSION['access_level'] >= 20) : ?>
               <li>
                 <div class="dropdown">
@@ -135,17 +136,10 @@ session_start();
             Explore the best tourist destinations and plan your next adventure
           </p>
           <div class="btn-group1">
-            <button class="btn btn-primary">EXPLORE DESTINATIONS</button>
+            <button id="explorrrr" class="btn btn-primary">EXPLORE DESTINATIONS</button>
           </div>
 
-          <div class="btn-group">
-            <button class="btn btn-primary">Learn more</button>
-
-            <button class="btn btn-secondary">POPULAR</button>
-            <button class="btn btn-secondary">featured</button>
-            <button class="btn btn-secondary">new</button>
-
-          </div>
+          
 
 
         </div>
@@ -202,7 +196,7 @@ session_start();
 
             <li>
               <div class="popular-card">
-                <a href="./featured/Devinemercy/divinemercy.html">
+                <a href="/destinations/divinemercy.php">
                   <figure class="card-img">
                     <img src="./assets/images/featured/divinemercy.png" alt="Divine Mercy, Lake Sebu" loading="lazy">
                   </figure>
@@ -236,7 +230,7 @@ session_start();
 
             <li>
               <div class="popular-card">
-                <a href="./featured/lakeholon/lakeholon.html">
+                <a href="/destinations/lakeholon.php">
                   <figure class="card-img">
                     <img src="./assets/images/featured/lakeholon.png" alt="Lakeholon, T'boli" loading="lazy">
                   </figure>
@@ -270,7 +264,7 @@ session_start();
 
           </ul>
 
-          <button class="btn btn-primary">More destintion</button>
+          <button id="more-destination-button" class="btn btn-primary">More destination</button>
 
         </div>
       </section>
@@ -578,31 +572,31 @@ session_start();
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+                <img src="https://files01.pna.gov.ph/ograph/2020/08/28/tuna-gsc.jpg" alt="Gallery image">
               </figure>
             </li>
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+                <img src="https://transitpinas.com/wp-content/uploads/2020/06/FB_IMG_1590900977648.jpg" alt="Gallery image">
               </figure>
             </li>
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+                <img src="https://asanasadsijames.files.wordpress.com/2018/03/lrm_export_20180319_1438241.jpg?w=1200" alt="Gallery image">
               </figure>
             </li>
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+                <img src="https://live.staticflickr.com/8302/7813185554_b54fa99081_b.jpg" alt="Gallery image">
               </figure>
             </li>
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+                <img src="https://i2.wp.com/joansfootprints.com/wp-content/uploads/2020/04/IMG_6928.jpg?fit=1024%2C683&ssl=1" alt="Gallery image">
               </figure>
             </li>
           </ul>
@@ -719,7 +713,16 @@ session_start();
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script>
+    document.getElementById('more-destination-button').addEventListener('click', function() {
+      window.location.href = 'destination.php';
+    });
+  </script>
+  <script>
+    document.getElementById('explorrrr').addEventListener('click', function() {
+      window.location.href = 'destination.php';
+    });
+  </script>
 </body>
 
 </html>

@@ -80,7 +80,7 @@
                 <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
               </li>
               <li>
-                <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+                <a href="contactus.php" class="navbar-link" data-nav-link>contact us</a>
               </li>
               <li>
                 <?php if (isset($_SESSION['loggedin'])) : ?>
