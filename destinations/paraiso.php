@@ -1,3 +1,39 @@
+<?php
+session_start();
+require '../db/db_connection.php';
+
+if (!isset($_SESSION['user_id'])) {
+    die('User not logged in');
+}
+
+$user_id = $_SESSION['user_id'];
+
+$stmt = $conn->prepare("SELECT firstname, lastname FROM users WHERE id = ?");
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$stmt->bind_result($firstname, $lastname);
+$stmt->fetch();
+$stmt->close();
+
+$full_name = $firstname . ' ' . $lastname;
+$place_name = 'Paraiso';
+
+$stmt = $conn->prepare("SELECT * FROM bookings WHERE user_full_name = ? AND place_name = ?");
+$stmt->bind_param("ss", $full_name, $place_name);
+$stmt->execute();
+$result = $stmt->get_result();
+$is_booked = $result->num_rows > 0;
+$stmt->close();
+
+$stmt = $conn->prepare("SELECT COUNT(*) FROM bookings WHERE place_name = ?");
+$stmt->bind_param("s", $place_name);
+$stmt->execute();
+$stmt->bind_result($total_bookings);
+$stmt->fetch();
+$stmt->close();
+
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +50,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-    <title>7-falls</title>
+    <title>paraiso</title>
 
 <body id="top">
     <style>
@@ -189,7 +225,7 @@
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">Paraiso Verde</span></a>
+                                <a itemprop="item" href="../destinations/paraiso.php"><span itemprop="name">Paraiso Verde</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -201,8 +237,11 @@
                                     <img class="wp-post-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh45gBuAVniLiTEa0QsxpU77dj5e6714wOsDODEBzGZ7htDpehw_14YIxPlI0Lg7noDOJtvjcnjqpH82oEPlQ1XTMDgos0eqBLTp8iVsvxEOV1Mh1QVa2tTVm6daEA7ylIBRrO6nWT65hA/s1600/paraiso1.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
-                                    <div data-id="40871" class="bookmark"><i class="far fa-booking" aria-hidden="true"></i> Booking </div>
-                                    <div class="bmc">booked by 0 people</div>
+                                <div data-id="40871" class="bookmark <?php echo $is_booked ? 'booked' : ''; ?>">
+                                        <button id="bookingBtn" class="<?php echo $is_booked ? 'booked' : ''; ?>" onclick="handleBooking()">
+                                            <?php echo $is_booked ? 'Booked' : 'Booking'; ?>
+                                        </button>
+                                    </div>
                                     <div class="rating">
                                         <div class="rating-prc" itemscope="itemscope" itemprop="aggregateRating" itemtype="//schema.org/AggregateRating">
                                             <meta itemprop="worstRating" content="1">
@@ -309,15 +348,48 @@
                         </div>
                     </div>
                 </article>
+                <div id="disqus_thread"></div>
+    <script>
+        (function() {
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://lakbaymarista.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </div>
         </div>
     </div>
+
+    <form id="bookingForm" action="../booking.php" method="POST" style="display: none;">
+        <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
+        <input type="hidden" name="place_name" value="paraiso">
+    </form>
+
+    <form id="cancelBookingForm" action="../cancel_booking.php" method="POST" style="display: none;">
+        <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
+        <input type="hidden" name="place_name" value="paraiso">
+    </form>
 
 
     <script src="../assets/js/gsap.min.js"></script>
     <script src="../assets/js/swiper-bundle.min.js"></script>
     <script src="../destinations/script.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+        function handleBooking() {
+            const bookingBtn = document.getElementById('bookingBtn');
+            if (bookingBtn.classList.contains('booked')) {
+                if (confirm('Do you want to cancel the booking?')) {
+                    document.getElementById('cancelBookingForm').submit();
+                }
+            } else {
+                document.getElementById('bookingForm').submit();
+            }
+        }
+    </script>
 
 </body>
 

@@ -1017,6 +1017,9 @@ img.curdown {
   padding: 8px 5px;
   cursor: pointer
 }
+.booked{
+  background: red;
+}
 
 .bookmark .dashicons {
   width: auto;
@@ -1028,9 +1031,6 @@ img.curdown {
   background: #222
 }
 
-.bookmark.marked {
-  background: #be342a
-}
 
 .ppr {
   font-size: 12px;

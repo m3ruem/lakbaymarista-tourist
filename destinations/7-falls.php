@@ -63,8 +63,9 @@ $conn->close();
         .login a {
             color: rgb(255, 255, 255);
         }
+
         .booked {
-            color: red;
+            color: black;
         }
     </style>
 
@@ -241,12 +242,11 @@ $conn->close();
                                     <img class="wp-post-image" src="../assets/images/gallery/7-falls.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
-                                <div data-id="40871" class="bookmark">
+                                    <div data-id="40871" class="bookmark <?php echo $is_booked ? 'booked' : ''; ?>">
                                         <button id="bookingBtn" class="<?php echo $is_booked ? 'booked' : ''; ?>" onclick="handleBooking()">
                                             <?php echo $is_booked ? 'Booked' : 'Booking'; ?>
                                         </button>
                                     </div>
-                                    <div class="bmc">booked by 0 people</div>
                                     <div class="rating">
                                         <div class="rating-prc" itemscope="itemscope" itemprop="aggregateRating" itemtype="//schema.org/AggregateRating">
                                             <meta itemprop="worstRating" content="1">
@@ -275,7 +275,7 @@ $conn->close();
                                         <i class="fab fa-facebook-f"></i>
                                         <span>Facebook</span>
                                     </a>
-                                    
+
                                 </div>
 
                                 <div class="wd-full">
@@ -347,6 +347,17 @@ $conn->close();
                             </div>
                         </div>
                     </div>
+                    <div id="disqus_thread"></div>
+    <script>
+        (function() {
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://lakbaymarista.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 </article>
             </div>
         </div>
@@ -367,7 +378,7 @@ $conn->close();
     <script src="../destinations/script.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
-         function handleBooking() {
+        function handleBooking() {
             const bookingBtn = document.getElementById('bookingBtn');
             if (bookingBtn.classList.contains('booked')) {
                 if (confirm('Do you want to cancel the booking?')) {

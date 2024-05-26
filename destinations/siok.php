@@ -1,3 +1,39 @@
+<?php
+session_start();
+require '../db/db_connection.php';
+
+if (!isset($_SESSION['user_id'])) {
+    die('User not logged in');
+}
+
+$user_id = $_SESSION['user_id'];
+
+$stmt = $conn->prepare("SELECT firstname, lastname FROM users WHERE id = ?");
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$stmt->bind_result($firstname, $lastname);
+$stmt->fetch();
+$stmt->close();
+
+$full_name = $firstname . ' ' . $lastname;
+$place_name = 'siok';
+
+$stmt = $conn->prepare("SELECT * FROM bookings WHERE user_full_name = ? AND place_name = ?");
+$stmt->bind_param("ss", $full_name, $place_name);
+$stmt->execute();
+$result = $stmt->get_result();
+$is_booked = $result->num_rows > 0;
+$stmt->close();
+
+$stmt = $conn->prepare("SELECT COUNT(*) FROM bookings WHERE place_name = ?");
+$stmt->bind_param("s", $place_name);
+$stmt->execute();
+$stmt->bind_result($total_bookings);
+$stmt->fetch();
+$stmt->close();
+
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -206,8 +242,11 @@
                                     <img class="wp-post-image" src="https://scontent.fmnl4-8.fna.fbcdn.net/v/t1.6435-9/116295127_157971199226157_3265540733167906730_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG09ehPfq005dJ94hx2eoPdKVKnsuRkUPYpUqey5GRQ9hb1bhMxngUy2UdyC8eYcH5yRL56adubLtTJ64Ol9bkg&_nc_ohc=Ue1oMY9N3x0Q7kNvgELUvls&_nc_ht=scontent.fmnl4-8.fna&oh=00_AYDnY9nF7VWVzw-M_S279GiFGIREv-HSjhzD3rfKBIM5bg&oe=66698D53" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
-                                    <div data-id="40871" class="bookmark"><i class="far fa-booking" aria-hidden="true"></i> Booking </div>
-                                    <div class="bmc">booked by 0 people</div>
+                                <div data-id="40871" class="bookmark <?php echo $is_booked ? 'booked' : ''; ?>">
+                                        <button id="bookingBtn" class="<?php echo $is_booked ? 'booked' : ''; ?>" onclick="handleBooking()">
+                                            <?php echo $is_booked ? 'Booked' : 'Booking'; ?>
+                                        </button>
+                                    </div>
                                     <div class="rating">
                                         <div class="rating-prc" itemscope="itemscope" itemprop="aggregateRating" itemtype="//schema.org/AggregateRating">
                                             <meta itemprop="worstRating" content="1">
@@ -319,10 +358,44 @@
     </div>
 
 
+    <div id="disqus_thread"></div>
+    <script>
+        (function() {
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://lakbaymarista.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <form id="bookingForm" action="../booking.php" method="POST" style="display: none;">
+        <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
+        <input type="hidden" name="place_name" value="7-Falls">
+    </form>
+
+    <form id="cancelBookingForm" action="../cancel_booking.php" method="POST" style="display: none;">
+        <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
+        <input type="hidden" name="place_name" value="7-Falls">
+    </form>
+
+
     <script src="../assets/js/gsap.min.js"></script>
     <script src="../assets/js/swiper-bundle.min.js"></script>
     <script src="../destinations/script.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+        function handleBooking() {
+            const bookingBtn = document.getElementById('bookingBtn');
+            if (bookingBtn.classList.contains('booked')) {
+                if (confirm('Do you want to cancel the booking?')) {
+                    document.getElementById('cancelBookingForm').submit();
+                }
+            } else {
+                document.getElementById('bookingForm').submit();
+            }
+        }
+    </script>
 
 </body>
 
