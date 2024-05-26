@@ -50,7 +50,7 @@ $conn->close();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-    <title>7-falls</title>
+    <title>siok</title>
 
 <body id="top">
     <style>
@@ -230,7 +230,7 @@ $conn->close();
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">Siok Falls</span></a>
+                                <a itemprop="item" href="../destinations/siok.php"><span itemprop="name">Siok Falls</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -239,7 +239,7 @@ $conn->close();
                         <div class="bigcontent nobigcover">
                             <div class="thumbook">
                                 <div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                                    <img class="wp-post-image" src="https://scontent.fmnl4-8.fna.fbcdn.net/v/t1.6435-9/116295127_157971199226157_3265540733167906730_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG09ehPfq005dJ94hx2eoPdKVKnsuRkUPYpUqey5GRQ9hb1bhMxngUy2UdyC8eYcH5yRL56adubLtTJ64Ol9bkg&_nc_ohc=Ue1oMY9N3x0Q7kNvgELUvls&_nc_ht=scontent.fmnl4-8.fna&oh=00_AYDnY9nF7VWVzw-M_S279GiFGIREv-HSjhzD3rfKBIM5bg&oe=66698D53" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
+                                    <img class="wp-post-image" src="https://scontent.fmnl4-8.fna.fbcdn.net/v/t1.6435-9/116295127_157971199226157_3265540733167906730_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG09ehPfq005dJ94hx2eoPdKVKnsuRkUPYpUqey5GRQ9hb1bhMxngUy2UdyC8eYcH5yRL56adubLtTJ64Ol9bkg&_nc_ohc=Ue1oMY9N3x0Q7kNvgELUvls&_nc_ht=scontent.fmnl4-8.fna&oh=00_AYDnY9nF7VWVzw-M_S279GiFGIREv-HSjhzD3rfKBIM5bg&oe=66698D53" title="" alt="siok" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
                                 <div data-id="40871" class="bookmark <?php echo $is_booked ? 'booked' : ''; ?>">
@@ -371,12 +371,12 @@ $conn->close();
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <form id="bookingForm" action="../booking.php" method="POST" style="display: none;">
         <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
-        <input type="hidden" name="place_name" value="7-Falls">
+        <input type="hidden" name="place_name" value="siok">
     </form>
 
     <form id="cancelBookingForm" action="../cancel_booking.php" method="POST" style="display: none;">
         <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
-        <input type="hidden" name="place_name" value="7-Falls">
+        <input type="hidden" name="place_name" value="siok">
     </form>
 
 

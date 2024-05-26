@@ -42,6 +42,10 @@ $galleryImages = getImagesFromFolder('./assets/images/gallery');
     .navbar-list a{
       color: black;
     }
+    .login a{
+      color: white;
+
+    }
   </style>
 
 

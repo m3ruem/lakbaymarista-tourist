@@ -1,7 +1,67 @@
 <?php
+session_start(); 
+
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../access_denied.php");
+    exit;
+}
+
+
+$user_access_level = $_SESSION['access_level'] ?? 0;
+
+
+if ($user_access_level <= 1) {
+    header("Location: ../access_denied.php");
+    exit;
+}
+
 include('includes/header.php');
 include('includes/navbar.php');
+require_once '../db/db_connection.php';
 ?>
+<link rel="stylesheet" href="includes/style.css">
+
+<style>
+
+#addDestinationForm {
+    padding-top: 100px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+
+label {
+  font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #45a049;
+}
+
+</style>
 
 
 <form id="addDestinationForm" action="../destination.php" method="post" enctype="multipart/form-data">
@@ -41,16 +101,14 @@ include('includes/navbar.php');
                 echo "<h2>" . $row['name'] . "</h2>";
                 echo "<p>" . $row['location'] . "</p>";
                 echo "<div class='review-and-idr'>";
-                echo "<div class='review'><i class='fa fa-star'></i> " . $row['rating'] . " | 851 review</div>";
-                echo "<p>P0</p>";
+                echo "<div class='review'><i class='fa fa-star'></i> " . $row['rating'] . " | review</div>";
+                echo "<p></p>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</a>";
                 echo "</div>";
             }
-        } else {
-            echo "0 results";
         }
         $conn->close();
         ?>
@@ -59,5 +117,4 @@ include('includes/navbar.php');
 
 <?php
 include('includes/script.php'); 
-include('includes/footer.php');
 ?>

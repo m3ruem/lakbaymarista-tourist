@@ -357,6 +357,7 @@ bottom: 20px;
   background: var(--dark);
 }
 
+
 .header-top .container {
   display: flex;
   grid-template-columns: repeat(3, 1fr);
