@@ -1,3 +1,65 @@
+<?php
+session_start();
+require './db/db_connection.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "lakbaymarista";
+
+  $conn = new mysqli($servername, $username, $password, $dbname);
+
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  $email = isset($_POST['email']) ? $_POST['email'] : '';
+  $password = isset($_POST['password']) ? $_POST['password'] : '';
+
+  $email = mysqli_real_escape_string($conn, $email);
+
+  $sql = "SELECT id, firstname, lastname, email, mobile, password, access_level FROM users WHERE email=?";
+  $stmt = $conn->prepare($sql);
+  $stmt->bind_param("s", $email);
+  $stmt->execute();
+  $result = $stmt->get_result();
+
+  if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $hashed_password = $row['password'];
+
+    if (password_verify($password, $hashed_password)) {
+      $_SESSION['loggedin'] = true;
+      $_SESSION['user_id'] = $row['id'];
+      $_SESSION['username'] = $row['firstname'] . ' ' . $row['lastname'];
+      $_SESSION['fname'] = $row['firstname'];
+      $_SESSION['lname'] = $row['lastname'];
+      $_SESSION['email'] = $row['email'];
+      $_SESSION['mobile'] = $row['mobile'];
+      $_SESSION['access_level'] = $row['access_level'];
+
+      $conn->close();
+
+      if ($row['access_level'] == 4) {
+        header('Location: dashboard.php');
+      } else {
+        header('Location: index.php');
+      }
+      exit;
+    } else {
+      $conn->close();
+      header('Location: login.php?error=invalid_credentials');
+      exit;
+    }
+  } else {
+    $conn->close();
+    header('Location: login.php?error=invalid_credentials');
+    exit;
+  }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -150,72 +212,109 @@
 
 <body>
     <header class="header" data-header>
-        <div class="overlay" data-overlay></div>
-        <div class="header-top">
-            <div class="container">
-                <div class="toggle-switch">
-                    <input type="checkbox" id="mode-switch" onclick="toggleMode()">
-                    <label for="mode-switch"></label>
-                </div>
-                <ul class="social-list">
-                    <li>
-                        <a href="index.php" class="logo-lm">
-                            <img src="./assets/images/logoLM-dark.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM-dark.png">
-                        </a>
-                    </li>
-                </ul>
-                <nav class="navbar" data-navbar>
-                    <div class="navbar-top">
-                        <a href="#" class="logo">
-                            <img src="./assets/images/logo-text-v2.png" alt="Lakbay Marista">
-                        </a>
-                        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-                            <ion-icon name="close-outline"></ion-icon>
-                        </button>
-                    </div>
-                    <ul class="navbar-list">
-                        <li>
-                            <a href="index.php" class="navbar-link" data-nav-link>home</a>
-                        </li>
-                        <li>
-                            <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
-                        </li>
-                        <li>
-                            <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-                        </li>
-                        <li>
-                            <?php if (isset($_SESSION['loggedin'])) : ?>
-                                <div class="dropdown">
-                                    <a href="#" class="navbar-link dropdown-toggle">
-                                        <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a href="profile.php" class="dropdown-item">Profile</a>
-                                        <a href="activity.php" class="dropdown-item">Activity</a>
-                                        <a href="membership.php" class="dropdown-item">Membership</a>
-                                        <a href="logout.php" class="dropdown-item">Logout</a>
-                                    </div>
-                                </div>
-                            <?php else : ?>
-                                <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
-                            <?php endif; ?>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-btn-group">
-                    <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-                        <ion-icon name="menu-outline"></ion-icon>
-                    </button>
-                </div>
-            </div>
+
+    <div class="overlay" data-overlay></div>
+    <div class="header-top">
+      <div class="container">
+        <div class="toggle-switch">
+          <input type="checkbox" id="mode-switch" onclick="toggleMode()">
+          <label for="mode-switch"></label>
         </div>
-        <div class="header-bottom">
-            <div class="container"></div>
+        <ul class="social-list">
+          <li>
+            <a href="index.php" class="logo-lm">
+              <img src="./assets/images/logoLM-dark.png" alt="Lakbay Marista" data-original-src="./assets/images/logoLM-dark.png">
+            </a>
+
+          </li>
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-text-v2.png" alt="Lakbay Marista">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.php" class="navbar-link" data-nav-link>home</a>
+            </li>
+            <li>
+              <a href="gallery.php" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+            <li>
+              <a href="destination.php" class="navbar-link" data-nav-link>destinations</a>
+            </li>
+            <li>
+              <a href="contactus.php" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+            <li>
+              <?php if (isset($_SESSION['loggedin']) && $_SESSION['access_level'] >= 20) : ?>
+            <li>
+              <div class="dropdown">
+                <a href="#" class="navbar-link dropdown-toggle">
+                  <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="profile.php" class="dropdown-item">Profile</a>
+                  <a href="activity.php" class="dropdown-item">Activity</a>
+                  <a href="membership.php" class="dropdown-item">Membership</a>
+                  <a href="./dashboard/" class="dropdown-item">Dashboard</a>
+                  <a href="logout.php" class="dropdown-item">Logout</a>
+                </div>
+              </div>
+            </li>
+          <?php elseif (isset($_SESSION['loggedin'])) : ?>
+            <li>
+              <div class="dropdown">
+                <a href="#" class="navbar-link dropdown-toggle">
+                  <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="profile.php" class="dropdown-item">Profile</a>
+                  <a href="activity.php" class="dropdown-item">Activity</a>
+                  <a href="membership.php" class="dropdown-item">Membership</a>
+                  <a href="logout.php" class="dropdown-item">Logout</a>
+                </div>
+              </div>
+            </li>
+          <?php else : ?>
+            <li>
+              <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
+            </li>
+          <?php endif; ?>
+          </li>
+          </ul>
+
+        </nav>
+
+
+        <div class="header-btn-group">
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
         </div>
-    </header>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+      </div>
+    </div>
+
+  </header>
     <main>
         <section class="contact-section">
             <div class="container">

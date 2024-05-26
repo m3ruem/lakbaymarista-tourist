@@ -77,7 +77,8 @@ if (isset($_POST["submit"])) {
       margin-bottom: 250px;
 
     }
-    .login a{
+
+    .login a {
       color: white;
 
     }
@@ -130,41 +131,41 @@ if (isset($_POST["submit"])) {
               <a href="contactus.php" class="navbar-link" data-nav-link>contact us</a>
             </li>
             <li>
-            <?php if (isset($_SESSION['loggedin']) && $_SESSION['access_level'] >= 20) : ?>
-              <li>
-                <div class="dropdown">
-                  <a href="#" class="navbar-link dropdown-toggle">
-                    <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
-                  </a>
-                  <div class="dropdown-menu">
-                    <a href="profile.php" class="dropdown-item">Profile</a>
-                    <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
-                    <a href="./dashboard/" class="dropdown-item">Dashboard</a>
-                    <a href="logout.php" class="dropdown-item">Logout</a>
-                  </div>
+              <?php if (isset($_SESSION['loggedin']) && $_SESSION['access_level'] >= 20) : ?>
+            <li>
+              <div class="dropdown">
+                <a href="#" class="navbar-link dropdown-toggle">
+                  <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="profile.php" class="dropdown-item">Profile</a>
+                  <a href="activity.php" class="dropdown-item">Activity</a>
+                  <a href="membership.php" class="dropdown-item">Membership</a>
+                  <a href="./dashboard/" class="dropdown-item">Dashboard</a>
+                  <a href="logout.php" class="dropdown-item">Logout</a>
                 </div>
-              </li>
-            <?php elseif (isset($_SESSION['loggedin'])) : ?>
-              <li>
-                <div class="dropdown">
-                  <a href="#" class="navbar-link dropdown-toggle">
-                    <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
-                  </a>
-                  <div class="dropdown-menu">
-                    <a href="profile.php" class="dropdown-item">Profile</a>
-                    <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
-                    <a href="logout.php" class="dropdown-item">Logout</a>
-                  </div>
-                </div>
-              </li>
-            <?php else : ?>
-              <li>
-                <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
-              </li>
-            <?php endif; ?>
+              </div>
             </li>
+          <?php elseif (isset($_SESSION['loggedin'])) : ?>
+            <li>
+              <div class="dropdown">
+                <a href="#" class="navbar-link dropdown-toggle">
+                  <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="profile.php" class="dropdown-item">Profile</a>
+                  <a href="activity.php" class="dropdown-item">Activity</a>
+                  <a href="membership.php" class="dropdown-item">Membership</a>
+                  <a href="logout.php" class="dropdown-item">Logout</a>
+                </div>
+              </div>
+            </li>
+          <?php else : ?>
+            <li>
+              <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
+            </li>
+          <?php endif; ?>
+          </li>
           </ul>
 
         </nav>

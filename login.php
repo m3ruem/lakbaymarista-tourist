@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email = mysqli_real_escape_string($conn, $email);
 
-    $sql = "SELECT id, password, access_level FROM users WHERE email=?";
+    $sql = "SELECT id, firstname, lastname, email, mobile, password, access_level FROM users WHERE email=?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -33,6 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $hashed_password)) {
             $_SESSION['loggedin'] = true;
             $_SESSION['user_id'] = $user_id;
+            $_SESSION['fname'] = $row['firstname'];
+            $_SESSION['lname'] = $row['lastname'];
+            $_SESSION['email'] = $row['email'];
+            $_SESSION['mobile'] = $row['mobile'];
             $_SESSION['access_level'] = $access_level;
             $conn->close();
             if ($access_level == 4) {
