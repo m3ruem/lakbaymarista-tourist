@@ -2,20 +2,22 @@
 session_start();
 require '../db/db_connection.php';
 
-if (!isset($_SESSION['user_id'])) {
-    die('User not logged in');
+$user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
+$loggedin = isset($_SESSION['loggedin']) ? $_SESSION['loggedin'] : false;
+
+if ($loggedin) {
+    $stmt = $conn->prepare("SELECT firstname, lastname FROM users WHERE id = ?");
+    $stmt->bind_param("i", $user_id);
+    $stmt->execute();
+    $stmt->bind_result($firstname, $lastname);
+    $stmt->fetch();
+    $stmt->close();
+    
+    $full_name = $firstname . ' ' . $lastname;
+} else {
+    $full_name = 'Guest';
 }
 
-$user_id = $_SESSION['user_id'];
-
-$stmt = $conn->prepare("SELECT firstname, lastname FROM users WHERE id = ?");
-$stmt->bind_param("i", $user_id);
-$stmt->execute();
-$stmt->bind_result($firstname, $lastname);
-$stmt->fetch();
-$stmt->close();
-
-$full_name = $firstname . ' ' . $lastname;
 $place_name = '7-Falls';
 
 $stmt = $conn->prepare("SELECT * FROM bookings WHERE user_full_name = ? AND place_name = ?");
@@ -34,6 +36,7 @@ $stmt->close();
 
 $conn->close();
 ?>
+
 
 
 <!DOCTYPE html>
@@ -113,7 +116,7 @@ $conn->close();
                             <a href="/destination.php" class="navbar-link" data-nav-link>destinations</a>
                         </li>
                         <li>
-                            <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+                            <a href="/contactus.php" class="navbar-link" data-nav-link>contact us</a>
                         </li>
                         <li>
                             <?php if (isset($_SESSION['loggedin'])) : ?>
@@ -122,10 +125,10 @@ $conn->close();
                                         <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
                                     </a>
                                     <div class="dropdown-menu">
-                                        <a href="profile.php" class="dropdown-item">Profile</a>
-                                        <a href="activity.php" class="dropdown-item">Activity</a>
-                                        <a href="membership.php" class="dropdown-item">Membership</a>
-                                        <a href="logout.php" class="dropdown-item">Logout</a>
+                                        <a href="/profile.php" class="dropdown-item">Profile</a>
+                                        <a href="/activity.php" class="dropdown-item">Activity</a>
+                                        <a href="/subscription.php" class="dropdown-item">Subscription</a>
+                                        <a href="/logout.php" class="dropdown-item">Logout</a>
                                     </div>
                                 </div>
                             <?php else : ?>

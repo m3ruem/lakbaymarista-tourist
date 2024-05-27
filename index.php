@@ -74,7 +74,7 @@ session_start();
                   <div class="dropdown-menu">
                     <a href="profile.php" class="dropdown-item">Profile</a>
                     <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
+                    <a href="subscription.php" class="dropdown-item">Subscription</a>
                     <a href="./dashboard/" class="dropdown-item">Dashboard</a>
                     <a href="logout.php" class="dropdown-item">Logout</a>
                   </div>
@@ -89,7 +89,7 @@ session_start();
                   <div class="dropdown-menu">
                     <a href="profile.php" class="dropdown-item">Profile</a>
                     <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
+                    <a href="subscription.php" class="dropdown-item">Subscription</a>
                     <a href="logout.php" class="dropdown-item">Logout</a>
                   </div>
                 </div>
