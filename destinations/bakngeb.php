@@ -2,20 +2,22 @@
 session_start();
 require '../db/db_connection.php';
 
-if (!isset($_SESSION['user_id'])) {
-    die('User not logged in');
+$user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
+$loggedin = isset($_SESSION['loggedin']) ? $_SESSION['loggedin'] : false;
+
+if ($loggedin) {
+    $stmt = $conn->prepare("SELECT firstname, lastname FROM users WHERE id = ?");
+    $stmt->bind_param("i", $user_id);
+    $stmt->execute();
+    $stmt->bind_result($firstname, $lastname);
+    $stmt->fetch();
+    $stmt->close();
+    
+    $full_name = $firstname . ' ' . $lastname;
+} else {
+    $full_name = 'Guest';
 }
 
-$user_id = $_SESSION['user_id'];
-
-$stmt = $conn->prepare("SELECT firstname, lastname FROM users WHERE id = ?");
-$stmt->bind_param("i", $user_id);
-$stmt->execute();
-$stmt->bind_result($firstname, $lastname);
-$stmt->fetch();
-$stmt->close();
-
-$full_name = $firstname . ' ' . $lastname;
 $place_name = 'bakngeb';
 
 $stmt = $conn->prepare("SELECT * FROM bookings WHERE user_full_name = ? AND place_name = ?");
@@ -34,7 +36,6 @@ $stmt->close();
 
 $conn->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +52,7 @@ $conn->close();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-    <title>7-falls</title>
+    <title>bakngeb</title>
 
 <body id="top">
     <style>
@@ -231,7 +232,7 @@ $conn->close();
                             </li>
                             ›
                             <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                <a itemprop="item" href="../destinations/7-falls.php"><span itemprop="name">Bakngeb</span></a>
+                                <a itemprop="item" href="../destinations/bakngeb.php"><span itemprop="name">Bakngeb</span></a>
                                 <meta itemprop="position" content="2">
                             </li>
                         </ol>
@@ -240,7 +241,7 @@ $conn->close();
                         <div class="bigcontent nobigcover">
                             <div class="thumbook">
                                 <div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                                    <img class="wp-post-image" src="https://steemitimages.com/DQmVeXtB64FvZUmPGDxGKLVskze6tFTeZrPvhk2XmyPncKz/12046762_1142855979075757_3387131697337026791_n.jpg" title="" alt="7-falls" decoding="async" itemprop="image" fetchpriority="high">
+                                    <img class="wp-post-image" src="https://steemitimages.com/DQmVeXtB64FvZUmPGDxGKLVskze6tFTeZrPvhk2XmyPncKz/12046762_1142855979075757_3387131697337026791_n.jpg" title="" alt="bakngeb" decoding="async" itemprop="image" fetchpriority="high">
                                 </div>
                                 <div class="rt">
                                 <div data-id="40871" class="bookmark <?php echo $is_booked ? 'booked' : ''; ?>">
@@ -377,12 +378,12 @@ $conn->close();
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <form id="bookingForm" action="../booking.php" method="POST" style="display: none;">
         <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
-        <input type="hidden" name="place_name" value="7-Falls">
+        <input type="hidden" name="place_name" value="bakngeb">
     </form>
 
     <form id="cancelBookingForm" action="../cancel_booking.php" method="POST" style="display: none;">
         <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
-        <input type="hidden" name="place_name" value="7-Falls">
+        <input type="hidden" name="place_name" value="bakngeb">
     </form>
 
 

@@ -2,21 +2,23 @@
 session_start();
 require '../db/db_connection.php';
 
-if (!isset($_SESSION['user_id'])) {
-    die('User not logged in');
+$user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
+$loggedin = isset($_SESSION['loggedin']) ? $_SESSION['loggedin'] : false;
+
+if ($loggedin) {
+    $stmt = $conn->prepare("SELECT firstname, lastname FROM users WHERE id = ?");
+    $stmt->bind_param("i", $user_id);
+    $stmt->execute();
+    $stmt->bind_result($firstname, $lastname);
+    $stmt->fetch();
+    $stmt->close();
+    
+    $full_name = $firstname . ' ' . $lastname;
+} else {
+    $full_name = 'Guest';
 }
 
-$user_id = $_SESSION['user_id'];
-
-$stmt = $conn->prepare("SELECT firstname, lastname FROM users WHERE id = ?");
-$stmt->bind_param("i", $user_id);
-$stmt->execute();
-$stmt->bind_result($firstname, $lastname);
-$stmt->fetch();
-$stmt->close();
-
-$full_name = $firstname . ' ' . $lastname;
-$place_name = 'Matutum';
+$place_name = 'matutum';
 
 $stmt = $conn->prepare("SELECT * FROM bookings WHERE user_full_name = ? AND place_name = ?");
 $stmt->bind_param("ss", $full_name, $place_name);
