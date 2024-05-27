@@ -438,77 +438,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email']) && isset($_PO
     </div>
 
   </header>
-  <main>
-    <div class="container">
-      <div class="profile-container">
-        <div class="profile-header">
-          <h2>Welcome to Your Profile</h2>
-          <p>This is your profile page.</p>
-        </div>
-        <div class="profile-info">
-          <div class="profile-info-item">
-            <h3>Name</h3>
-            <p><?php echo isset($_SESSION['fname']) && isset($_SESSION['lname']) ? htmlspecialchars($_SESSION['fname'] . ' ' . $_SESSION['lname']) : 'N/A'; ?></p>
-          </div>
-          <div class="profile-info-item">
-            <h3>Email</h3>
-            <p><?php echo isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'N/A'; ?></p>
-          </div>
-          <div class="profile-info-item">
-            <h3>Phone Number</h3>
-            <p><?php echo isset($_SESSION['mobile']) ? htmlspecialchars($_SESSION['mobile']) : 'N/A'; ?></p>
-          </div>
-          <div class="profile-info-item">
-            <h3>User ID</h3>
-            <p><?php echo isset($_SESSION['user_id']) ? htmlspecialchars($_SESSION['user_id']) : 'N/A'; ?></p>
-          </div>
-          <div class="profile-info-item">
-            <h3>Access Level</h3>
-            <p><?php echo isset($_SESSION['access_level']) ? htmlspecialchars($_SESSION['access_level']) : 'N/A'; ?></p>
-          </div>
-        </div>
-        <div class="profile-actions">
-          <button class="edit-btn">Edit Profile</button>
-        </div>
-      </div>
-    </div>
-    <!-- Edit profile form -->
-    <div class="edit-profile-form" style="display: none;">
-      <h2>Edit Profile</h2>
-      <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
-        <div class="form-group">
-          <label for="profile_pic">Profile Picture</label>
-          <input type="file" id="profile_picture" name="profile_pic">
-        </div>
-        <div class="form-group">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname" value="<?php echo isset($_SESSION['fname']) ? htmlspecialchars($_SESSION['fname']) : ''; ?>">
-        </div>
-        <div class="form-group">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname" value="<?php echo isset($_SESSION['lname']) ? htmlspecialchars($_SESSION['lname']) : ''; ?>">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" value="<?php echo isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : ''; ?>">
-        </div>
-        <div class="form-group">
-          <label for="mobile">Phone Number</label>
-          <input type="text" id="mobile" name="mobile" value="<?php echo isset($_SESSION['mobile']) ? htmlspecialchars($_SESSION['mobile']) : ''; ?>">
-        </div>
-        <div class="form-group">
-          <label for="current_password">Current Password</label>
-          <input type="password" id="current_password" name="current_password" value="<?php echo isset($_POST['current_password']) ? htmlspecialchars($_POST['current_password']) : ''; ?>">
-        </div>
-        <div class="form-group">
-          <label for="new_password">New Password</label>
-          <input type="password" id="new_password" name="new_password">
-        </div>
-        <button type="submit" class="save-btn">Save Changes</button>
-      </form>
-    </div>
-    </div>
-  </main>
+
+
 
   <a href="#top" class="go-top" data-go-top>
     <ion-icon name="chevron-up-outline"></ion-icon>
