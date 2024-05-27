@@ -1,45 +1,60 @@
 <?php
 session_start();
 
-require './db/db_connection.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "lakbaymarista";
 
-if (isset($_POST["submit"])) {
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-  $destinationName = $_POST['destinationName'];
-  $destinationLocation = $_POST['destinationLocation'];
-  $destinationRating = $_POST['destinationRating'];
-
-
-  $targetDir = "destinations/";
-  $targetFile = $targetDir . basename($_FILES["destinationImage"]["name"]);
-  $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-
-
-  $check = getimagesize($_FILES["destinationImage"]["tmp_name"]);
-  if ($check !== false) {
-
-    if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
-      echo "Sorry, only JPG, JPEG, PNG files are allowed.";
-      exit();
-    } else {
-
-      if (move_uploaded_file($_FILES["destinationImage"]["tmp_name"], $targetFile)) {
-
-        $stmt = $conn->prepare("INSERT INTO destinations (name, location, image, rating) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("sssd", $destinationName, $destinationLocation, $targetFile, $destinationRating);
-        $stmt->execute();
-        $stmt->close();
-
-        header("Location: destination.php");
-        exit();
-      } else {
-        echo "Sorry, there was an error uploading your file.";
-      }
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
-  } else {
-    echo "File is not an image.";
-    exit();
-  }
+
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+    $password = isset($_POST['password']) ? $_POST['password'] : '';
+
+    $email = mysqli_real_escape_string($conn, $email);
+
+    $sql = "SELECT id, firstname, lastname, email, mobile, password, access_level FROM users WHERE email=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $hashed_password = $row['password'];
+        $user_id = $row['id'];
+        $access_level = $row['access_level'];
+
+        if (password_verify($password, $hashed_password)) {
+            $_SESSION['loggedin'] = true;
+            $_SESSION['user_id'] = $user_id;
+            $_SESSION['fname'] = $row['firstname'];
+            $_SESSION['lname'] = $row['lastname'];
+            $_SESSION['email'] = $row['email'];
+            $_SESSION['mobile'] = $row['mobile'];
+            $_SESSION['access_level'] = $access_level;
+            $conn->close();
+            if ($access_level == 4) {
+                header('Location: dashboard.php');
+            } else {
+                header('Location: index.php');
+            }
+            exit;
+        } else {
+            $conn->close();
+            header('Location: login.php?error=invalid_credentials');
+            exit;
+        }
+    } else {
+        $conn->close();
+        header('Location: login.php?error=invalid_credentials');
+        exit;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -77,7 +92,8 @@ if (isset($_POST["submit"])) {
       margin-bottom: 250px;
 
     }
-    .login a{
+
+    .login a {
       color: white;
 
     }
@@ -130,41 +146,41 @@ if (isset($_POST["submit"])) {
               <a href="contactus.php" class="navbar-link" data-nav-link>contact us</a>
             </li>
             <li>
-            <?php if (isset($_SESSION['loggedin']) && $_SESSION['access_level'] >= 20) : ?>
-              <li>
-                <div class="dropdown">
-                  <a href="#" class="navbar-link dropdown-toggle">
-                    <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
-                  </a>
-                  <div class="dropdown-menu">
-                    <a href="profile.php" class="dropdown-item">Profile</a>
-                    <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
-                    <a href="./dashboard/" class="dropdown-item">Dashboard</a>
-                    <a href="logout.php" class="dropdown-item">Logout</a>
-                  </div>
+              <?php if (isset($_SESSION['loggedin']) && $_SESSION['access_level'] >= 20) : ?>
+            <li>
+              <div class="dropdown">
+                <a href="#" class="navbar-link dropdown-toggle">
+                  <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="profile.php" class="dropdown-item">Profile</a>
+                  <a href="activity.php" class="dropdown-item">Activity</a>
+                  <a href="membership.php" class="dropdown-item">Membership</a>
+                  <a href="./dashboard/" class="dropdown-item">Dashboard</a>
+                  <a href="logout.php" class="dropdown-item">Logout</a>
                 </div>
-              </li>
-            <?php elseif (isset($_SESSION['loggedin'])) : ?>
-              <li>
-                <div class="dropdown">
-                  <a href="#" class="navbar-link dropdown-toggle">
-                    <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
-                  </a>
-                  <div class="dropdown-menu">
-                    <a href="profile.php" class="dropdown-item">Profile</a>
-                    <a href="activity.php" class="dropdown-item">Activity</a>
-                    <a href="membership.php" class="dropdown-item">Membership</a>
-                    <a href="logout.php" class="dropdown-item">Logout</a>
-                  </div>
-                </div>
-              </li>
-            <?php else : ?>
-              <li>
-                <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
-              </li>
-            <?php endif; ?>
+              </div>
             </li>
+          <?php elseif (isset($_SESSION['loggedin'])) : ?>
+            <li>
+              <div class="dropdown">
+                <a href="#" class="navbar-link dropdown-toggle">
+                  <div class="profile"><ion-icon name="person-circle-outline"></ion-icon></div>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="profile.php" class="dropdown-item">Profile</a>
+                  <a href="activity.php" class="dropdown-item">Activity</a>
+                  <a href="membership.php" class="dropdown-item">Membership</a>
+                  <a href="logout.php" class="dropdown-item">Logout</a>
+                </div>
+              </div>
+            </li>
+          <?php else : ?>
+            <li>
+              <div class="login"> <a href="login.php" class="btn btn-primary">Login</a></div>
+            </li>
+          <?php endif; ?>
+          </li>
           </ul>
 
         </nav>

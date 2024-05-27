@@ -278,9 +278,7 @@ session_start();
           <h2 class="h2 section-title">Checkout Our Packages</h2>
 
           <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+            
           </p>
 
           <ul class="package-list">

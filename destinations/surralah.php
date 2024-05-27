@@ -159,7 +159,7 @@ $conn->close();
             <div class="swiper-wrapper">
 
                 <section class="islands swiper-slide">
-                    <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/432110673_287846981003039_4133516281026849524_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF5fdG4AwaMquFB6zHhZ0GvPahvx5J9j349qG_Hkn2Pfqxu0pBavKLnpR72cIto95a0-MFUoEcLkXa6h5NK2_Ir&_nc_ohc=70WTtQ32BHwQ7kNvgEoHQdn&_nc_ht=scontent-hkg4-1.xx&oh=00_AYB6JmB1HrRXrIEawvVLtT3res2NDLADm3VyKsYjgo0__Q&oe=6647F636" alt="" class="islands__bg">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCPDChuIMI5FXn4MRSkdkW5_BpJxZaLM1B7FrXQ9SxH_v4pYscZS_GkEZW69D1cx0DGe56wZAc6lqR171melyqdXFO89p0_vaklaBY8qPJNLZ8QpoxRGSarwZhtlVeOZ9ILLaPbqvYDUtc/s1600/surallah.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
@@ -174,7 +174,7 @@ $conn->close();
 
 
                 <section class="islands swiper-slide">
-                    <img src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/432084176_287847317669672_9092270557578000862_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEAgp4OdxJjW3RJTSaA4YQfmA8vczLq4zCYDy9zMurjMLUCx_12E2CyqKDTm31aO0-GILTaqlUdOtcPocwisoQt&_nc_ohc=GdyyQvJ4r8cQ7kNvgEVi9uM&_nc_ht=scontent-hkg1-2.xx&oh=00_AYCqWPIwl67_3jB_RpINB_z_w24EdNb0w8cqEEQkpalYVg&oe=6647C90B" alt="" class="islands__bg">
+                    <img src="https://www.surallah.gov.ph/wp-content/uploads/2019/01/5-1024x578.png" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
@@ -186,7 +186,7 @@ $conn->close();
                     </div>
                 </section>
                 <section class="islands swiper-slide">
-                    <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/432156389_287847484336322_4685623601550315455_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGOtVWLlNKfBsnv8tlNzu5G9bj8xNhmI3n1uPzE2GYjeVd1i23IO3if97P2kAVwXg6kA53CFxxkHMPDI6gOWTtH&_nc_ohc=R3CXbEFhzSkQ7kNvgEwkCOc&_nc_ht=scontent-mnl1-1.xx&oh=00_AYBfdgRJYuBM5wl8tdtswPerTsh25uUakChELNFpdGp-og&oe=6647C163" alt="" class="islands__bg">
+                    <img src="https://www.surallah.gov.ph/wp-content/uploads/2019/01/I-love-Surallah-1.jpg" alt="" class="islands__bg">
 
                     <div class="islands__container bd-container">
                         <div class="islands__data">
@@ -204,9 +204,9 @@ $conn->close();
         <!--========== CONTROLS ==========-->
         <div class="controls gallery-thumbs">
             <div class="controls__container swiper-wrapper">
-                <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/432110673_287846981003039_4133516281026849524_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF5fdG4AwaMquFB6zHhZ0GvPahvx5J9j349qG_Hkn2Pfqxu0pBavKLnpR72cIto95a0-MFUoEcLkXa6h5NK2_Ir&_nc_ohc=70WTtQ32BHwQ7kNvgEoHQdn&_nc_ht=scontent-hkg4-1.xx&oh=00_AYB6JmB1HrRXrIEawvVLtT3res2NDLADm3VyKsYjgo0__Q&oe=6647F636" alt="" class="controls__img swiper-slide">
-                <img src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/432084176_287847317669672_9092270557578000862_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEAgp4OdxJjW3RJTSaA4YQfmA8vczLq4zCYDy9zMurjMLUCx_12E2CyqKDTm31aO0-GILTaqlUdOtcPocwisoQt&_nc_ohc=GdyyQvJ4r8cQ7kNvgEVi9uM&_nc_ht=scontent-hkg1-2.xx&oh=00_AYCqWPIwl67_3jB_RpINB_z_w24EdNb0w8cqEEQkpalYVg&oe=6647C90B" alt="" class="controls__img swiper-slide">
-                <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/432156389_287847484336322_4685623601550315455_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGOtVWLlNKfBsnv8tlNzu5G9bj8xNhmI3n1uPzE2GYjeVd1i23IO3if97P2kAVwXg6kA53CFxxkHMPDI6gOWTtH&_nc_ohc=R3CXbEFhzSkQ7kNvgEwkCOc&_nc_ht=scontent-mnl1-1.xx&oh=00_AYBfdgRJYuBM5wl8tdtswPerTsh25uUakChELNFpdGp-og&oe=6647C163" alt="" class="controls__img swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCPDChuIMI5FXn4MRSkdkW5_BpJxZaLM1B7FrXQ9SxH_v4pYscZS_GkEZW69D1cx0DGe56wZAc6lqR171melyqdXFO89p0_vaklaBY8qPJNLZ8QpoxRGSarwZhtlVeOZ9ILLaPbqvYDUtc/s1600/surallah.jpg" alt="" class="controls__img swiper-slide">
+                <img src="https://www.surallah.gov.ph/wp-content/uploads/2019/01/5-1024x578.png" alt="" class="controls__img swiper-slide">
+                <img src="https://www.surallah.gov.ph/wp-content/uploads/2019/01/I-love-Surallah-1.jpg" alt="" class="controls__img swiper-slide">
             </div>
         </div>
     </main>
